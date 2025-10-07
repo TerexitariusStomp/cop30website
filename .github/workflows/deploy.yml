@@ -5,6 +5,7 @@ on:
     branches: [ main ]
 
 # Trigger redeploy
+# Second trigger
 
 jobs:
   build-and-deploy:
