@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const LocationSection: React.FC = () => {
   const listItems = [
@@ -50,7 +51,25 @@ const LocationSection: React.FC = () => {
                 ))}
               </ul>
             </div>
+            <div className="mt-12">
+              <Image
+                src="/images/photo3.png"
+                alt="Panoramic view of AMAzone village"
+                width={1200}
+                height={400}
+                className="rounded-lg w-full object-cover"
+              />
+            </div>
           </div>
+        </div>
+        <div className="mt-12">
+          <Image
+            src="/images/photo3.png"
+            alt="Panoramic view of AMAzone village"
+            width={1200}
+            height={400}
+            className="rounded-lg w-full object-cover"
+          />
         </div>
       </div>
     </div>
