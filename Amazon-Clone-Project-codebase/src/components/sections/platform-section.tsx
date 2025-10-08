@@ -62,14 +62,11 @@ const PlatformSection = () => {
     <section id="platform" className="py-24 sm:py-32 bg-background-primary">
       <div className="container">
         <h2 className="text-[42px] font-light text-text-primary mb-6">
-          <a href="http://AMAzone.network" className="text-primary underline decoration-primary underline-offset-4 hover:opacity-80">
-            AMAzone.network
-          </a>
-          <span> Platform</span>
+          AMAzone.network Platform
         </h2>
 
         <p className="text-lg text-text-primary max-w-4xl mb-12">
-          The <a href="http://AMAzone.network" className="text-accent-orange hover:opacity-80 underline">AMAzone.network</a> is the <span className="text-primary">phygital plataform</span> of the movement and the <a href="#" className="text-accent-orange hover:opacity-80 underline">permanent ecosystem</a> of the community.
+          The AMAzone.network is the <span className="text-primary">phygital plataform</span> of the movement and the permanent ecosystem of the community.
         </p>
 
         <h3 className="text-xl text-text-primary mb-10">

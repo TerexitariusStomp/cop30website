@@ -28,7 +28,7 @@ const milestones: Milestone[] = [
     date: "November 1 – Belém",
     content: (
       <p>
-        Launch of the <a href="http://AMAzone.network" target="_blank" rel="noopener noreferrer" className="text-accent-orange underline hover:opacity-80 transition-opacity">AMAzone.network</a> platform: a gamified phygital platform to map and develop projects in network; promote events, courses, training, crowdfunding, marketplace, and streaming with <span className="text-text-primary">onchain (Web3)</span> integration.
+        Launch of the AMAzone.network platform: a gamified phygital platform to map and develop projects in network; promote events, courses, training, crowdfunding, marketplace, and streaming with <span className="text-text-primary">onchain (Web3)</span> integration.
       </p>
     ),
     align: "right",
