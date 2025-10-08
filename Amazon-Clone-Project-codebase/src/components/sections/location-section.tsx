@@ -53,7 +53,7 @@ const LocationSection: React.FC = () => {
             </div>
             <div className="mt-12">
               <Image
-                src="/images/photo3.png"
+                src="/images/photo3.jpg"
                 alt="Panoramic view of AMAzone village"
                 width={1200}
                 height={400}
