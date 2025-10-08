@@ -60,15 +60,6 @@ const DeliverablesSection = () => {
               />
             ))}
           </div>
-          <div className="mt-12">
-            <Image
-              src="/photos/photo2.jpg"
-              alt="BIOHMA pavilion"
-              width={800}
-              height={300}
-              className="rounded-lg w-full object-cover"
-            />
-          </div>
         </div>
       </div>
     </section>
