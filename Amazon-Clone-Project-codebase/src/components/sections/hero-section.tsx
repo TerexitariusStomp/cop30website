@@ -3,14 +3,6 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <section className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-background-primary">
-      <Image
-        src="/photos/photo1.jpg"
-        alt="Panoramic view of AMAzone village"
-        fill
-        className="object-cover"
-        priority
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-background-secondary/40 to-background-primary/60" />
       
       <div className="relative z-10 flex flex-col items-center justify-center p-6 text-center">
         <Image

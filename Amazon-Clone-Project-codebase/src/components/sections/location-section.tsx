@@ -51,15 +51,6 @@ const LocationSection: React.FC = () => {
                 ))}
               </ul>
             </div>
-            <div className="mt-12">
-              <Image
-                src="/photos/photo3.jpg"
-                alt="Panoramic view of AMAzone village"
-                width={1200}
-                height={400}
-                className="rounded-lg w-full object-cover"
-              />
-            </div>
           </div>
         </div>
       </div>
