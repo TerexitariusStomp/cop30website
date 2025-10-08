@@ -3,6 +3,13 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <section className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-background-primary">
+      <Image
+        src="/images/photo1.png"
+        alt="AMAZONE COOP30 village overview at sunset"
+        fill
+        className="object-cover"
+        priority
+      />
       <div className="absolute inset-0 bg-gradient-to-b from-background-secondary/80 to-background-primary" />
       
       <div className="relative z-10 flex flex-col items-center justify-center p-4 text-center">
