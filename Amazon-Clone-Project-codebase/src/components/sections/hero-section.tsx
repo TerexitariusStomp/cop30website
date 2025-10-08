@@ -10,7 +10,7 @@ const HeroSection = () => {
         className="object-cover"
         priority
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background-secondary/70 to-background-primary/90" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background-secondary/40 to-background-primary/60" />
       
       <div className="relative z-10 flex flex-col items-center justify-center p-6 text-center">
         <Image
