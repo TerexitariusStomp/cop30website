@@ -1,4 +1,4 @@
-/* Updated: 2025-10-07T18:39:39.763Z */
+/* Updated: 2025-10-08T18:11:31.168Z */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @import "tailwindcss";
@@ -7,33 +7,33 @@
 
 @theme {
   /* Shadcn/UI colors - adapted for dark theme */
-  --color-background: #1a2e2e;
-  --color-foreground: #e8dcc8;
+  --color-background: #0c1c1c; /* Darker green for better match */
+  --color-foreground: #f0e6d2;
 
-  --color-card: #2a4444;
-  --color-card-foreground: #e8dcc8;
+  --color-card: #1e3434;
+  --color-card-foreground: #f0e6d2;
 
-  --color-popover: #2a4444;
-  --color-popover-foreground: #e8dcc8;
+  --color-popover: #1e3434;
+  --color-popover-foreground: #f0e6d2;
 
-  --color-primary: #e8a489; /* Accent Coral/Peach */
-  --color-primary-foreground: #1a2e2e;
+  --color-primary: #e89b7c; /* Adjusted coral */
+  --color-primary-foreground: #0c1c1c;
 
-  --color-secondary: #2a4444;
-  --color-secondary-foreground: #e8dcc8;
+  --color-secondary: #1e3434;
+  --color-secondary-foreground: #f0e6d2;
 
-  --color-muted: #2a4444;
-  --color-muted-foreground: #b8a890;
+  --color-muted: #1e3434;
+  --color-muted-foreground: #c0b29c;
 
-  --color-accent: #2a4444;
-  --color-accent-foreground: #e8dcc8;
+  --color-accent: #1e3434;
+  --color-accent-foreground: #f0e6d2;
 
-  --color-destructive: #ef4444; /* Default red, can be adjusted if needed */
+  --color-destructive: #ef4444;
   --color-destructive-foreground: #fafafa;
 
-  --color-border: #4a6464;
-  --color-input: #4a6464;
-  --color-ring: #e8a489; /* Accent Coral/Peach for focus rings */
+  --color-border: #3a5454;
+  --color-input: #3a5454;
+  --color-ring: #e89b7c;
 
   --color-chart-1: #e67e22;
   --color-chart-2: #2d8659;
@@ -41,35 +41,35 @@
   --color-chart-4: #f1c40f;
   --color-chart-5: #e74c3c;
 
-  --color-sidebar: #1a2e2e; /* Not explicitly in design, using primary background */
-  --color-sidebar-foreground: #e8dcc8;
-  --color-sidebar-primary: #e8a489;
-  --color-sidebar-primary-foreground: #1a2e2e;
-  --color-sidebar-accent: #2a4444;
-  --color-sidebar-accent-foreground: #e8dcc8;
-  --color-sidebar-border: #4a6464;
-  --color-sidebar-ring: #e8a489;
+  --color-sidebar: #0c1c1c;
+  --color-sidebar-foreground: #f0e6d2;
+  --color-sidebar-primary: #e89b7c;
+  --color-sidebar-primary-foreground: #0c1c1c;
+  --color-sidebar-accent: #1e3434;
+  --color-sidebar-accent-foreground: #f0e6d2;
+  --color-sidebar-border: #3a5454;
+  --color-sidebar-ring: #e89b7c;
 
   /* Custom AMAzone COOP30 colors */
-  --color-background-primary: #1a2e2e;
-  --color-background-secondary: #2a4444;
-  --color-background-tertiary: #3a5454;
-  --color-accent-coral: #e8a489;
+  --color-background-primary: #0c1c1c;
+  --color-background-secondary: #1e3434;
+  --color-background-tertiary: #2a4444;
+  --color-accent-coral: #e89b7c;
   --color-accent-orange: #d8815b;
-  --color-text-primary: #e8dcc8;
-  --color-text-secondary: #b8a890;
-  --color-border-subtle: #4a6464;
+  --color-text-primary: #f0e6d2;
+  --color-text-secondary: #c0b29c;
+  --color-border-subtle: #3a5454;
   --color-highlight-green: #6a9a7a;
-  --color-overlay-dark: #1a2e2e; /* Used for rgba(26, 46, 46, 0.8) */
-  --color-button-primary: #8b7355; /* Tan/brown variant for primary button */
+  --color-overlay-dark: #0c1c1c;
+  --color-button-primary: #8b7355;
 
   /* Typography */
   --font-display: "Cinzel Decorative", serif;
   --font-body: "Inter", sans-serif;
 
-  --radius-lg: 0.75rem; /* 12px */
-  --radius-md: 0.5rem; /* 8px */
-  --radius-sm: 0.25rem; /* 4px */
+  --radius-lg: 0.75rem;
+  --radius-md: 0.5rem;
+  --radius-sm: 0.25rem;
 
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
@@ -160,36 +160,36 @@
   }
 
   h1 {
-    font-size: 3.5rem; /* 56px */
-    letter-spacing: 0.02em;
-  }
-
-  h2 {
-    font-size: 2.625rem; /* 42px */
-  }
-
-  h3 {
-    font-size: 2rem; /* 32px */
-  }
-
-  h4 {
-    font-size: 1.5rem; /* 24px */
-    font-weight: 500;
-  }
-
-  p {
-    font-size: 1.125rem; /* 18px */
-    color: var(--color-text-primary);
-  }
-
-  p.large {
-    font-size: 1.25rem; /* 20px */
-  }
-
-  p.small {
-    font-size: 0.875rem; /* 14px */
-    color: var(--color-text-secondary);
-  }
+      font-size: 4rem; /* Adjusted to match larger headings in image */
+      letter-spacing: 0.03em;
+    }
+  
+    h2 {
+      font-size: 3rem;
+    }
+  
+    h3 {
+      font-size: 2.25rem;
+    }
+  
+    h4 {
+      font-size: 1.75rem;
+      font-weight: 500;
+    }
+  
+    p {
+      font-size: 1.25rem;
+      color: var(--color-text-primary);
+    }
+  
+    p.large {
+      font-size: 1.5rem;
+    }
+  
+    p.small {
+      font-size: 1rem;
+      color: var(--color-text-secondary);
+    }
 
   a {
     color: var(--color-accent-orange);
