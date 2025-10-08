@@ -52,6 +52,38 @@ const IntroSection = () => {
               Learn More
             </a>
           </div>
+
+          <div className="mt-8">
+            <h3 className="text-lg font-semibold text-text-primary mb-4">
+              Connected Boat Initiatives
+            </h3>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="https://www.global-impact-alliance.org/cop30"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-md border border-accent-coral bg-transparent px-4 py-2 text-sm font-medium text-accent-coral shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-accent-coral/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+              >
+                Global Impact Alliance COP30
+              </a>
+              <a
+                href="https://www.instagram.com/reel/DBCyMFJuM5o/?igsh=MXE1YzhyNmtoOXpnMg%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-md border border-accent-coral bg-transparent px-4 py-2 text-sm font-medium text-accent-coral shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-accent-coral/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+              >
+                Hope Boat Initiative
+              </a>
+              <a
+                href="/cop30website/pdf/Hope Boat COP30 - FAS 2025.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-md border border-accent-coral bg-transparent px-4 py-2 text-sm font-medium text-accent-coral shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-accent-coral/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+              >
+                Hope Boat COP30 PDF
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
