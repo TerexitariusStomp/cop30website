@@ -12,7 +12,6 @@ const ticketData: TicketTier[] = [
     category: "AMAzone Pass",
     value: "FREE",
     includes: "General access + open experiences",
-    isLink: true,
   },
   {
     category: "Camping",

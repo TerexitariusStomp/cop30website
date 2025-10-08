@@ -17,18 +17,6 @@ const ClosingQuoteSection = () => {
           "AMAzone COOP30 is the hope that genuine and regenerative cooperation will come to life in Belém."
         </blockquote>
 
-        <h3 className="font-display text-[1.75rem] leading-tight text-accent-coral mb-4 text-center">
-          Registration and More Information soon at:
-        </h3>
-
-        <div className="flex flex-col gap-1 mb-12 text-center">
-          <a href="http://www.amazone.network/taz" target="_blank" rel="noopener noreferrer" className="text-xl text-text-primary no-underline hover:text-accent-coral transition-colors">
-            www.amazone.network/taz
-          </a>
-          <a href="http://www.amazone.network/paz" target="_blank" rel="noopener noreferrer" className="text-xl text-text-primary no-underline hover:text-accent-coral transition-colors">
-            www.amazone.network/paz
-          </a>
-        </div>
 
         <p className="font-display text-5xl font-thin tracking-widest text-white/10 uppercase mb-4 text-center">
           Join-COOPerate-Regenerate
@@ -38,20 +26,6 @@ const ClosingQuoteSection = () => {
           Come together and let's build this regenerative future in common unity.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center gap-4">
-          <a
-            href="#"
-            className="inline-block bg-button-primary text-text-primary px-8 py-3 rounded-md font-semibold text-base hover:opacity-90 transition-opacity"
-          >
-            Join the Network
-          </a>
-          <a
-            href="#"
-            className="inline-block bg-transparent border-2 border-border-subtle text-text-primary px-8 py-3 rounded-md font-semibold text-base hover:bg-white/10 transition-colors"
-          >
-            Register Now
-          </a>
-        </div>
 
       </div>
     </section>
