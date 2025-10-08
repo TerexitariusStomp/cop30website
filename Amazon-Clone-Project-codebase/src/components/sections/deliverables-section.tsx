@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Gamepad2, Network, Sprout, Shield, Archive } from 'lucide-react';
 
 const deliverables = [
