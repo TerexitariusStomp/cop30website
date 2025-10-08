@@ -62,7 +62,7 @@ const DeliverablesSection = () => {
           </div>
           <div className="mt-12">
             <Image
-              src="/images/photo2.png"
+              src="/images/photo2.jpg"
               alt="BIOHMA pavilion"
               width={800}
               height={300}

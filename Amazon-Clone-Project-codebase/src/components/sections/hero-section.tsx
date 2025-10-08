@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-background-primary">
       <Image
-        src="/images/photo1.png"
+        src="/images/photo1.jpg"
         alt="AMAZONE COOP30 village overview at sunset"
         fill
         className="object-cover"
