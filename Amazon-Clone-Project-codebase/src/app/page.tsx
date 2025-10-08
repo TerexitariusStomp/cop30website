@@ -9,6 +9,7 @@ import LocationSection from "@/components/sections/location-section";
 import PlatformSection from "@/components/sections/platform-section";
 import DeliverablesSection from "@/components/sections/deliverables-section";
 import PricingSection from "@/components/sections/pricing-section";
+import CodexSection from "@/components/sections/codex-section";
 import ClosingQuoteSection from "@/components/sections/closing-quote-section";
 import Footer from "@/components/sections/footer";
 
@@ -26,6 +27,7 @@ export default function Page() {
       <PlatformSection />
       <DeliverablesSection />
       <PricingSection />
+      <CodexSection />
       <ClosingQuoteSection />
       <Footer />
     </main>

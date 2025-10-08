@@ -48,8 +48,8 @@ const ticketData: TicketTier[] = [
         </span>
       </>
     ),
-    value: "1,000 / 15 days of exibition",
-    includes: "Pavillon of Art + 2 cocktails + communication",
+    value: "1,000 / 15 days of exhibition",
+    includes: "Pavilion of Art + 2 cocktails + communication",
   },
   {
     category: "Restaurants / Food Hubs",

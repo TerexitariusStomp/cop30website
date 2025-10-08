@@ -22,7 +22,7 @@ const ActivitiesSection = () => {
 
   const showcaseItems = [
     'Fairs, exhibitions, and showcases',
-    'Regen hackathons and impact bootcamps',
+    'Regenerative hackathons and impact bootcamps',
   ];
 
   const cultureItems = [

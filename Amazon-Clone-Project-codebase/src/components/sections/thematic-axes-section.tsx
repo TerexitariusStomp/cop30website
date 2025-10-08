@@ -37,7 +37,7 @@ const thematicAxes: ThematicAxe[] = [
   },
   {
     icon: Recycle,
-    title: 'Circular Bioconomy',
+    title: 'Circular Bioeconomy',
     description: 'Commons, Holistic Management, Minimalism & Post-Growth',
   },
   {
@@ -48,14 +48,14 @@ const thematicAxes: ThematicAxe[] = [
   },
   {
     icon: Carrot,
-    title: 'Health Food sovereignty',
+    title: 'Health, Food Sovereignty',
     description:
-      'Agriforestry, Syntropic Farming, Regenerative Cattle and Family Agriculture',
+      'Agroforestry, Syntropic Farming, Regenerative Cattle, and Family Agriculture',
   },
   {
     icon: Blocks,
     title: 'Liquid Democracy',
-    description: 'Gamification(Play2Earn), XR & Blockchain',
+    description: 'Gamification (Play2Earn), XR & Blockchain',
   },
   {
     icon: Palette,
@@ -64,13 +64,13 @@ const thematicAxes: ThematicAxe[] = [
   },
   {
     icon: Users,
-    title: 'Gender equanimity',
-    description: 'youth and social development',
+    title: 'Gender Equanimity',
+    description: 'Youth and Social Development',
   },
   {
     icon: Tent,
     title: 'Indigenous Culture',
-    description: 'Wisdom, Healings, Land and Space rights',
+    description: 'Wisdom, Healings, Land and Space Rights',
   },
   {
     icon: Handshake,
@@ -86,22 +86,22 @@ const thematicAxes: ThematicAxe[] = [
   {
     icon: BrainCircuit,
     title: 'Conscious AI',
-    description: 'Data Centers, Space exploration and Quantum Computing',
+    description: 'Data Centers, Space Exploration, and Quantum Computing',
   },
   {
     icon: UtensilsCrossed,
     title: 'Integral Health',
-    description: 'Medicines, Practices, Wellness and Self-Knowledge',
+    description: 'Medicines, Practices, Wellness, and Self-Knowledge',
   },
   {
     icon: Droplet,
-    title: 'Sanitation credits',
-    description: 'Water treatment & management',
+    title: 'Sanitation Credits',
+    description: 'Water Treatment & Management',
   },
   {
     icon: UsersRound,
-    title: 'Platform cooperativism',
-    description: 'bioregionalism, systemic change and network societies',
+    title: 'Platform Cooperativism',
+    description: 'Bioregionalism, Systemic Change, and Network Societies',
   },
 ];
 

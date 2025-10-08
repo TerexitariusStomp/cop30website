@@ -4,9 +4,9 @@ const LocationSection: React.FC = () => {
   const listItems = [
     "Camping & Glamping Zones",
     "Indigenous Village & Village of Love",
-    "Altar of Intentions - Art Instalation for Prayer, Cerimonies & Structured Water",
+    "Altar of Intentions - Art Installation for Prayer, Ceremonies & Structured Water",
     "HUBiomaH – Innovation and Bioeconomy",
-    "Startup Societies Village – Ethic AI, Web3 and DAO",
+    "Startup Societies Village – Ethical AI, Web3 and DAO",
     "G.A.I.A. Village – Articulation of Autonomous Territories and EcoVillage Network",
     "AMAzone Guardians' Camp – Regenerative Leadership Training",
   ];

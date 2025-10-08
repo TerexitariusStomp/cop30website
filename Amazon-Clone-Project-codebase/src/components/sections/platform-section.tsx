@@ -9,7 +9,7 @@ const features = [
   },
   {
     icon: MapPin,
-    title: "Map ad Dev Projects",
+    title: "Map & Develop Projects",
     description: "Dashboard to map and develop projects, actions, communities and events during and beyond COP30",
   },
   {

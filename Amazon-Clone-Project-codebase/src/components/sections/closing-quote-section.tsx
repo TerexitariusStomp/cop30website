@@ -35,7 +35,7 @@ const ClosingQuoteSection = () => {
         </p>
 
         <p className="text-xl text-text-primary max-w-2xl mb-8 text-center">
-          Come to gather and let's build this regenerative future in common unity.
+          Come together and let's build this regenerative future in common unity.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-4">

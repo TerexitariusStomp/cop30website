@@ -14,7 +14,7 @@ const milestones: Milestone[] = [
     content: (
       <>
         <p>
-          <strong className="font-bold text-text-primary">PATH to COOP30</strong> – Caravans Gathering PreCOP at Path Festival.
+          <strong className="font-bold text-text-primary">PATH to COOP30</strong> – Caravans Gathering Pre-COP at Path Festival.
         </p>
         <a href="https://festivalpath.com.br/" target="_blank" rel="noopener noreferrer" className="text-accent-orange underline hover:opacity-80 transition-opacity mt-2 inline-block break-all">
           https://festivalpath.com.br/
@@ -48,7 +48,7 @@ const milestones: Milestone[] = [
     date: "November 23–29 – Breves – Marajó Island (PAZ)",
     content: (
       <p>
-        <strong className="font-bold text-text-primary">AMAzone POC30 – Permaculture Autonomous Zone:</strong> A permacultural autonomous zone where will test regenerative practices and present data through a <strong className="font-bold text-text-primary">DeSci (Decentralized Science)</strong> methodology. Formation of the 0r1Gen Think & DAO Tank and training of the <strong className="font-bold text-text-primary">AMAzone Guardians</strong>, who will be agents of conservation and restoration of the Amazon Biome, integrated with the creation of the <strong className="font-bold text-text-primary">BiomaH Credit</strong>, endorsed by Dr. Carlos Nobre.
+        <strong className="font-bold text-text-primary">AMAzone POC30 – Permaculture Autonomous Zone:</strong> A permacultural autonomous zone where we will test regenerative practices and present data through a <strong className="font-bold text-text-primary">DeSci (Decentralized Science)</strong> methodology. Formation of the 0r1Gen Think & DAO Tank and training of the <strong className="font-bold text-text-primary">AMAzone Guardians</strong>, who will be agents of conservation and restoration of the Amazon Biome, integrated with the creation of the <strong className="font-bold text-text-primary">BiomaH Credit</strong>, endorsed by Dr. Carlos Nobre.
       </p>
     ),
     align: "right",
