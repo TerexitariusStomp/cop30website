@@ -8,7 +8,7 @@ const MissionSection = () => {
     "Art and Activism",
     "Bioeconomy",
     "Conscious AI, Web3 & Technology",
-    "Open Inovation",
+    "Open Innovation",
     "Ancestral Knowledge",
   ];
 

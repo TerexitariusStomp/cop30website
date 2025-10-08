@@ -15,8 +15,11 @@ const HeroSection = () => {
           priority
         />
         <h1 className="font-display text-5xl uppercase tracking-[0.15em] text-text-primary">
-          AMAZONE
+          AMAZONE COOP30
         </h1>
+        <p className="text-lg text-text-primary mt-4">
+          In autonomy, we trust
+        </p>
       </div>
     </section>
   );

@@ -20,12 +20,12 @@ const deliverables = [
   {
     icon: Shield,
     title: "AMAzone Guardians Network",
-    description: "Training and certification of regenerative leaders to protect and originate biomah credits and green assets",
+    description: "Training and certification of regenerative leaders to protect and originate BiomaH credits and green assets",
   },
   {
     icon: Archive,
     title: "AMAzone Cartography- Living Archive of the Amazon Communities",
-    description: "Data, art, medicines and stories from the amazon territories",
+    description: "Data, art, medicines and stories from the Amazon territories",
   },
 ];
 
