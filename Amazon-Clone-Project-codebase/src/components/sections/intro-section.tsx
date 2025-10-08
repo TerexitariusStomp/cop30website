@@ -9,7 +9,7 @@ const IntroSection = () => {
           src="https://imgproxy.gamma.app/resize/quality:80/resizing_type:fit/width:2000/https://cdn.gamma.app/a3df5ydei145m46/011703b718f4415d970644b183860572/original/ae65513d-3168-4f6d-b890-656785ecda48.png"
           alt="Wooden boats on a calm river, evoking a sense of tranquility and connection to nature."
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
           quality={80}
           unoptimized
         />
