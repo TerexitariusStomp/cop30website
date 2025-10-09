@@ -2,7 +2,15 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-background-primary">
+    <section
+      className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: 'url("https://hackmd.io/_uploads/B1Lp3VB6gl.jpg")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       
       <div className="relative z-10 flex flex-col items-center justify-center p-6 text-center">
         <Image
