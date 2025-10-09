@@ -105,17 +105,33 @@ const ThematicAxesSection = () => {
   return (
     <div className="bg-background-primary text-text-primary">
       <div className="container py-24 sm:py-32">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-[2.625rem] leading-[1.3] text-text-primary">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-[2.625rem] leading-[1.3] text-text-primary text-center mb-12">
             Thematic Axes
           </h2>
-          <p className="mt-6 text-lg leading-8 text-text-secondary">
-            The AMAzone COOP30 program integrates the central themes of{' '}
-            <span className="text-accent-orange underline">
-              glocal regeneration
-            </span>
-            :
-          </p>
+          <div className="flex items-center justify-center gap-8">
+            <div className="flex-shrink-0">
+              <img
+                src="https://hackmd.io/_uploads/S1U6n4Hagl.jpg"
+                alt="Left thematic image"
+                className="w-32 h-32 object-contain rounded-lg"
+              />
+            </div>
+            <p className="text-lg leading-8 text-text-secondary text-center max-w-md">
+              The AMAzone COOP30 program integrates the central themes of{' '}
+              <span className="text-accent-orange underline">
+                glocal regeneration
+              </span>
+              :
+            </p>
+            <div className="flex-shrink-0">
+              <img
+                src="https://hackmd.io/_uploads/r1Iph4B6xe.jpg"
+                alt="Right thematic image"
+                className="w-32 h-32 object-contain rounded-lg"
+              />
+            </div>
+          </div>
         </div>
         <div className="mx-auto mt-16 grid max-w-none grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 md:grid-cols-2 lg:grid-cols-3">
           {thematicAxes.map((axe, index) => (
