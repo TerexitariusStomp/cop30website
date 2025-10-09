@@ -66,7 +66,7 @@ const PlatformSection = () => {
         </h2>
 
         <p className="text-lg text-text-primary max-w-4xl mb-12">
-          The AMAzone.network is the <span className="text-primary">phygital plataform</span> of the movement and the permanent ecosystem of the community.
+          The AMAzone.network is the <span className="text-primary">phygital platform</span> of the movement and the permanent ecosystem of the community.
         </p>
 
         <h3 className="text-xl text-text-primary mb-10">
