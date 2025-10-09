@@ -26,78 +26,78 @@ type ThematicAxe = {
 const thematicAxes: ThematicAxe[] = [
   {
     icon: Sprout,
-    title: 'Ecological Jurisprudence',
-    description: 'Rights of Nature, common use of the land, sea and space. Autonomous Beings & Territories'
+    title: 'Ecological Jurisprudence, Rights of Nature, common use of the land, sea and space. Autonomous Beings & Territories',
+    description: ''
   },
   {
     icon: Trees,
-    title: 'Preservation and Restoration of Forests',
-    description: 'Mangroves, Savannas, Oceans, and Ecosystems'
+    title: 'Preservation and Restoration of Forests, Mangroves, Savannas, Oceans, and Ecosystems',
+    description: ''
   },
   {
     icon: Recycle,
-    title: 'Circular Bioconomy',
-    description: 'Commons, Holistic Management, Minimalism & Post-Growth'
+    title: 'Circular Bioconomy, Commons, Holistic Management, Minimalism & Post-Growth',
+    description: ''
   },
   {
     icon: Landmark,
-    title: 'Bioregional Funds',
-    description: 'Natural Capital, Regenerative Finance (ReFi) and Green Asset Generation'
+    title: 'Bioregional Funds, Natural Capital, Regenerative Finance (ReFi) and Green Asset Generation',
+    description: ''
   },
   {
     icon: Carrot,
-    title: 'Health Food sovereignty',
-    description: 'Agriforestry, Syntropic Farming, Regenerative Cattle and Family Agriculture'
+    title: 'Health Food sovereignty, Agriforestry, Syntropic Farming, Regenerative Cattle and Family Agriculture',
+    description: ''
   },
   {
     icon: Blocks,
-    title: 'Liquid Democracy',
-    description: 'Gamification(Play2Earn), XR & Blockchain'
+    title: 'Liquid Democracy, Gamification(Play2Earn), XR & Blockchain',
+    description: ''
   },
   {
     icon: Palette,
-    title: 'Art, Culture, and Living Learning',
-    description: '(Free Education)'
+    title: 'Art, Culture, and Living Learning(Free Education)',
+    description: ''
   },
   {
     icon: Users,
-    title: 'Gender equanimity',
-    description: 'youth and social development'
+    title: 'Gender equanimity, youth and social development',
+    description: ''
   },
   {
     icon: Tent,
-    title: 'Indigenous Culture',
-    description: 'Wisdom, Healings, Land and Space rights'
+    title: 'Indigenous Culture, Wisdom, Healings, Land and Space rights',
+    description: ''
   },
   {
     icon: Handshake,
-    title: 'Conflict Resolution',
-    description: 'Dialogues for Peace (Ahimsa), Roerich Pact and Banner of Peace'
+    title: 'Conflict Resolution,  Dialogues for Peace (Ahimsa),  Roerich Pact and Banner of Peace',
+    description: ''
   },
   {
     icon: Building2,
-    title: 'Smart, Sustainable & Regenerative Cities',
-    description: 'Ecovillages and Neighborhoods'
+    title: 'Smart, Sustainable & Regenerative Cities, Ecovillages and Neighborhoods',
+    description: ''
   },
   {
     icon: BrainCircuit,
-    title: 'Conscious; AI',
-    description: 'Data Centers, Space exploration and Quantum Computing'
+    title: 'Conscious; AI, Data Centers, Space exploration and Quantum Computing',
+    description: ''
   },
   {
     icon: UtensilsCrossed,
-    title: 'Integral Health',
-    description: 'Medicines, Practices, Wellness and Self-Knowledge,'
+    title: 'Integral Health, Medicines, Practices, Wellness and Self-Knowledge,',
+    description: ''
   },
   {
     icon: Droplet,
-    title: 'Sanitation credits',
-    description: 'Water treatment & management'
+    title: 'Sanitation credits, Water treatment & management',
+    description: ''
   },
   {
     icon: UsersRound,
-    title: 'Platform cooperativism',
-    description: 'bioregionalism, systemic change and network societies'
+    title: 'Platform cooperativism, bioregionalism, systemic change and network societies',
+    description: ''
   },
 ];
 
@@ -127,9 +127,9 @@ const ThematicAxesSection = () => {
                   strokeWidth="1.5"
                 />
               </div>
-              <p className="mt-2 flex-auto text-base leading-7 text-muted-foreground">
+              <h3 className="text-xl font-semibold leading-7 text-foreground">
                 {axe.title + (axe.description ? ' ' + axe.description : '')}
-              </p>
+              </h3>
             </div>
           ))}
         </div>
