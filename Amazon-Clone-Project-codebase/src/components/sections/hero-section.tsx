@@ -20,11 +20,18 @@ const HeroSection = () => {
           height={350}
           className="mb-10"
           priority
+          style={{ filter: 'drop-shadow(1px 1px 2px rgb(151,147,136))' }}
         />
-        <h1 className="font-display text-6xl uppercase tracking-[0.2em] text-text-primary mb-4">
+        <h1
+          className="font-display text-6xl uppercase tracking-[0.2em] text-text-primary mb-4"
+          style={{ textShadow: '1px 1px 2px rgb(151,147,136)' }}
+        >
           AMAZONE COOP30
         </h1>
-        <p className="text-xl text-text-primary font-light tracking-wide">
+        <p
+          className="text-xl text-text-primary font-light tracking-wide"
+          style={{ textShadow: '1px 1px 2px rgb(151,147,136)' }}
+        >
           In autonomy, we trust
         </p>
       </div>
