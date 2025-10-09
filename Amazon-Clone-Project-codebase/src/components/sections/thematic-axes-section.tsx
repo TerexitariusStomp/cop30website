@@ -103,54 +103,52 @@ const thematicAxes: ThematicAxe[] = [
 
 const ThematicAxesSection = () => {
   return (
-    <div className="bg-background-primary text-text-primary">
-      <div className="container py-24 sm:py-32">
-        <div className="mx-auto max-w-6xl">
+    <section className="bg-background-primary text-text-primary py-24 sm:py-32">
+      <div className="grid grid-cols-3 min-h-[800px]">
+        <div className="flex items-center justify-center">
+          <img
+            src="https://hackmd.io/_uploads/S1U6n4Hagl.jpg"
+            alt="Left thematic image"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="px-6 md:px-8 flex flex-col justify-center">
           <h2 className="text-[2.625rem] leading-[1.3] text-text-primary text-center mb-12">
             Thematic Axes
           </h2>
-          <div className="flex items-center justify-center gap-8">
-            <div className="flex-shrink-0">
-              <img
-                src="https://hackmd.io/_uploads/S1U6n4Hagl.jpg"
-                alt="Left thematic image"
-                className="w-32 h-32 object-contain rounded-lg"
-              />
-            </div>
-            <p className="text-lg leading-8 text-text-secondary text-center max-w-md">
-              The AMAzone COOP30 program integrates the central themes of{' '}
-              <span className="text-accent-orange underline">
-                glocal regeneration
-              </span>
-              :
-            </p>
-            <div className="flex-shrink-0">
-              <img
-                src="https://hackmd.io/_uploads/r1Iph4B6xe.jpg"
-                alt="Right thematic image"
-                className="w-32 h-32 object-contain rounded-lg"
-              />
-            </div>
+          <p className="text-lg leading-8 text-text-secondary text-center max-w-md mx-auto mb-12">
+            The AMAzone COOP30 program integrates the central themes of{' '}
+            <span className="text-accent-orange underline">
+              glocal regeneration
+            </span>
+            :
+          </p>
+          <div className="space-y-8">
+            {thematicAxes.map((axe, index) => (
+              <div key={index} className="flex flex-col p-6 rounded-lg transition-colors duration-300 hover:bg-background-secondary">
+                <div className="mb-6">
+                  <axe.icon
+                    className="h-12 w-12 text-primary"
+                    aria-hidden="true"
+                    strokeWidth="1.5"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold leading-7 text-foreground">
+                  {axe.title + (axe.description ? ' ' + axe.description : '')}
+                </h3>
+              </div>
+            ))}
           </div>
         </div>
-        <div className="mx-auto mt-16 grid max-w-none grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 md:grid-cols-2 lg:grid-cols-3">
-          {thematicAxes.map((axe, index) => (
-            <div key={index} className="flex flex-col p-6 rounded-lg transition-colors duration-300 hover:bg-background-secondary">
-              <div className="mb-6">
-                <axe.icon
-                  className="h-12 w-12 text-primary"
-                  aria-hidden="true"
-                  strokeWidth="1.5"
-                />
-              </div>
-              <h3 className="text-xl font-semibold leading-7 text-foreground">
-                {axe.title + (axe.description ? ' ' + axe.description : '')}
-              </h3>
-            </div>
-          ))}
+        <div className="flex items-center justify-center">
+          <img
+            src="https://hackmd.io/_uploads/r1Iph4B6xe.jpg"
+            alt="Right thematic image"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
