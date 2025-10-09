@@ -61,13 +61,26 @@ const PlatformSection = () => {
   return (
     <section id="platform" className="py-24 sm:py-32 bg-background-primary">
       <div className="container">
-        <h2 className="text-[42px] font-light text-text-primary mb-6">
-          AMAzone.network Platform
-        </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+          {/* Left Column - Text */}
+          <div className="flex flex-col justify-center">
+            <h2 className="text-[42px] font-light text-text-primary mb-6">
+              AMAzone.network Platform
+            </h2>
+            <p className="text-lg text-text-primary">
+              The AMAzone.network is the <span className="text-primary">phygital platform</span> of the movement and the permanent ecosystem of the community.
+            </p>
+          </div>
 
-        <p className="text-lg text-text-primary max-w-4xl mb-12">
-          The AMAzone.network is the <span className="text-primary">phygital platform</span> of the movement and the permanent ecosystem of the community.
-        </p>
+          {/* Right Column - Image */}
+          <div className="flex items-center justify-center">
+            <img
+              src="https://hackmd.io/_uploads/SJ8T2VBaeg.jpg"
+              alt="AMAzona network platform"
+              className="w-full h-auto rounded-lg object-contain max-w-md"
+            />
+          </div>
+        </div>
 
         <h3 className="text-xl text-text-primary mb-10">
           Main Features:
