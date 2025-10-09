@@ -44,9 +44,9 @@ const DeliverableItem = ({ icon: Icon, title, description }: { icon: React.Eleme
 
 const DeliverablesSection = () => {
   return (
-    <section style={{ backgroundColor: '#E89B7C' }} className="py-24 sm:py-32">
+    <section style={{ backgroundImage: `url('https://hackmd.io/_uploads/H1ITnEr6lx.jpg')`, backgroundColor: '#E89B7C', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'multiply' }} className="py-24 sm:py-32">
       <div className="container">
-        <div className="bg-[#1f3d3d] rounded-2xl shadow-lg p-12">
+        <div className="bg-[#1f3d3d]/90 rounded-2xl shadow-lg p-12 backdrop-blur-sm">
           <h2 className="text-center font-display text-[2.5rem] leading-tight text-text-primary mb-16">
             Deliverables and Legacy
           </h2>
