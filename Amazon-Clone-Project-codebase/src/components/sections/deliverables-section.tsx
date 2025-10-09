@@ -56,9 +56,16 @@ const DeliverablesSection = () => {
     <section style={{ backgroundImage: `url('https://hackmd.io/_uploads/H1ITnEr6lx.jpg')`, backgroundColor: '#E89B7C', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'multiply' }} className="py-24 sm:py-32">
       <div className="container">
         <div className="bg-[#1f3d3d]/90 rounded-2xl shadow-lg p-12 backdrop-blur-sm">
-          <h2 className="text-center font-display text-[2.5rem] leading-tight text-text-primary mb-16">
+          <h2 className="text-center font-display text-[2.5rem] leading-tight text-text-primary mb-8">
             Deliverables and Legacy
           </h2>
+          <div className="flex justify-center mb-8">
+            <img
+              src="https://hackmd.io/_uploads/ByLT24r6ex.jpg"
+              alt="Deliverables image"
+              className="w-48 h-48 object-contain rounded-lg"
+            />
+          </div>
           <div className="space-y-8">
             {deliverables.map((item, index) => (
               <DeliverableItem
