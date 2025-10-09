@@ -21,27 +21,27 @@ const locations: LocationItem[] = [
   },
   {
     icon: Palette,
-    title: "Altar of Intentions - Art Installation for Prayer, Ceremonies & Structured Water",
+    title: "Altar of Intentions Art Installation for Prayer, Ceremonies & Structured Water",
     description: ""
   },
   {
     icon: Leaf,
-    title: "HUBiomaH – Innovation and Bioeconomy",
+    title: "HUBiomaH Innovation and Bioeconomy",
     description: ""
   },
   {
     icon: BrainCircuit,
-    title: "Startup Societies Village – Ethical AI, Web3 and DAO",
+    title: "Startup Societies Village Ethical AI, Web3 and DAO",
     description: ""
   },
   {
     icon: Globe,
-    title: "G.A.I.A. Village – Articulation of Autonomous Territories and EcoVillage Network",
+    title: "G.A.I.A. Village Articulation of Autonomous Territories and EcoVillage Network",
     description: ""
   },
   {
     icon: BookOpen,
-    title: "AMAzone Guardians' Camp – Regenerative Leadership Training",
+    title: "AMAzone Guardians' Camp Regenerative Leadership Training",
     description: ""
   },
 ];
@@ -68,14 +68,9 @@ const locations: LocationItem[] = [
                   strokeWidth="1.5"
                 />
               </div>
-              <h3 className="text-xl font-semibold leading-7 text-foreground">
-                {loc.title}
-              </h3>
-              {loc.description && (
-                <p className="mt-2 flex-auto text-base leading-7 text-muted-foreground">
-                  {loc.description}
-                </p>
-              )}
+              <p className="mt-2 flex-auto text-base leading-7 text-muted-foreground">
+                {loc.title + (loc.description ? ' ' + loc.description : '')}
+              </p>
             </div>
           ))}
         </div>
