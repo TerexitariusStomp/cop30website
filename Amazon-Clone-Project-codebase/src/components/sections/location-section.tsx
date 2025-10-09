@@ -21,28 +21,28 @@ const locations: LocationItem[] = [
   },
   {
     icon: Palette,
-    title: "Altar of Intentions",
-    description: "Art Installation for Prayer, Ceremonies & Structured Water"
+    title: "Altar of Intentions - Art Installation for Prayer, Ceremonies & Structured Water",
+    description: ""
   },
   {
     icon: Leaf,
-    title: "HUBiomaH",
-    description: "Innovation and Bioeconomy"
+    title: "HUBiomaH – Innovation and Bioeconomy",
+    description: ""
   },
   {
     icon: BrainCircuit,
-    title: "Startup Societies Village",
-    description: "Ethical AI, Web3 and DAO"
+    title: "Startup Societies Village – Ethical AI, Web3 and DAO",
+    description: ""
   },
   {
     icon: Globe,
-    title: "G.A.I.A. Village",
-    description: "Articulation of Autonomous Territories and EcoVillage Network"
+    title: "G.A.I.A. Village – Articulation of Autonomous Territories and EcoVillage Network",
+    description: ""
   },
   {
     icon: BookOpen,
-    title: "AMAzone Guardians' Camp",
-    description: "Regenerative Leadership Training"
+    title: "AMAzone Guardians' Camp – Regenerative Leadership Training",
+    description: ""
   },
 ];
 
@@ -54,7 +54,7 @@ const locations: LocationItem[] = [
             Location: AMAzone Village
           </h2>
           <p className="mt-6 text-lg leading-8 text-text-secondary">
-            <strong>Venue:</strong> Espaço Nautiko – Guamá Riverfront, Belém (PA) – next door to UFPA<br />
+            Venue: Espaço Nautiko – Guamá Riverfront, Belém (PA) – next door to UFPA<br />
             The venue will be a living TAZ (Temporary Autonomous Zone), featuring camping, glamping, a main stage, restaurants, art gallery, wellness tent, plenary, exhibition booths, multimedia art, and community areas. The site will include waste management and greywater treatment.
           </p>
         </div>
@@ -71,9 +71,11 @@ const locations: LocationItem[] = [
               <h3 className="text-xl font-semibold leading-7 text-foreground">
                 {loc.title}
               </h3>
-              <p className="mt-2 flex-auto text-base leading-7 text-muted-foreground">
-                {loc.description}
-              </p>
+              {loc.description && (
+                <p className="mt-2 flex-auto text-base leading-7 text-muted-foreground">
+                  {loc.description}
+                </p>
+              )}
             </div>
           ))}
         </div>
