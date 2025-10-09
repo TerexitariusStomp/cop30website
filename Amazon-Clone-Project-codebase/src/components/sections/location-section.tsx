@@ -1,57 +1,81 @@
 import React from 'react';
-import Image from 'next/image';
+import { BookOpen, BrainCircuit, Globe, Leaf, Palette, Tent, UsersRound } from 'lucide-react';
 
 const LocationSection: React.FC = () => {
-  const listItems = [
-    "Camping & Glamping Zones",
-    "Indigenous Village & Village of Love",
-    "Altar of Intentions - Art Installation for Prayer, Ceremonies & Structured Water",
-    "HUBiomaH – Innovation and Bioeconomy",
-    "Startup Societies Village – Ethical AI, Web3 and DAO",
-    "G.A.I.A. Village – Articulation of Autonomous Territories and EcoVillage Network",
-    "AMAzone Guardians' Camp – Regenerative Leadership Training",
-  ];
+type LocationItem = {
+  icon: React.ElementType;
+  title: string;
+  description: string;
+};
+
+const locations: LocationItem[] = [
+  {
+    icon: Tent,
+    title: "Camping & Glamping Zones",
+    description: ""
+  },
+  {
+    icon: UsersRound,
+    title: "Indigenous Village & Village of Love",
+    description: ""
+  },
+  {
+    icon: Palette,
+    title: "Altar of Intentions",
+    description: "Art Installation for Prayer, Ceremonies & Structured Water"
+  },
+  {
+    icon: Leaf,
+    title: "HUBiomaH",
+    description: "Innovation and Bioeconomy"
+  },
+  {
+    icon: BrainCircuit,
+    title: "Startup Societies Village",
+    description: "Ethical AI, Web3 and DAO"
+  },
+  {
+    icon: Globe,
+    title: "G.A.I.A. Village",
+    description: "Articulation of Autonomous Territories and EcoVillage Network"
+  },
+  {
+    icon: BookOpen,
+    title: "AMAzone Guardians' Camp",
+    description: "Regenerative Leadership Training"
+  },
+];
 
   return (
-    <div className="bg-background-primary">
-      <div className="container mx-auto py-24 px-6 md:px-8">
-        <h2 className="text-center font-display text-4xl text-text-primary mb-16">
-          Location: AMAzone Village
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
-          {/* Left Column */}
-          <div>
-            <h3 className="font-body text-[1.75rem] leading-tight font-medium text-text-primary mb-6">
-              Venue Details
-            </h3>
-            <div className="space-y-6 text-base text-text-secondary leading-relaxed">
-              <p>
-                <strong className="font-semibold text-text-primary">Venue:</strong> Espaço Nautiko – Guamá Riverfront, Belém (PA) – next door to UFPA
-              </p>
-              <p>
-                The venue will be a living TAZ(Temporary Autonomous Zone), featuring camping, glamping, a main stage, restaurants, art gallery, wellness tent, plenary, exhibition booths, multimedia art, and community areas. The site will include <strong className="font-semibold text-text-primary">waste management and greywater treatment</strong> .
+    <div className="bg-background-primary text-text-primary">
+      <div className="container py-24 sm:py-32">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="text-[2.625rem] leading-[1.3] text-text-primary">
+            Location: AMAzone Village
+          </h2>
+          <p className="mt-6 text-lg leading-8 text-text-secondary">
+            <strong>Venue:</strong> Espaço Nautiko – Guamá Riverfront, Belém (PA) – next door to UFPA<br />
+            The venue will be a living TAZ (Temporary Autonomous Zone), featuring camping, glamping, a main stage, restaurants, art gallery, wellness tent, plenary, exhibition booths, multimedia art, and community areas. The site will include waste management and greywater treatment.
+          </p>
+        </div>
+        <div className="mx-auto mt-16 grid max-w-none grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 md:grid-cols-2 lg:grid-cols-3">
+          {locations.map((loc, index) => (
+            <div key={index} className="flex flex-col p-6 rounded-lg transition-colors duration-300 hover:bg-background-secondary">
+              <div className="mb-6">
+                <loc.icon
+                  className="h-12 w-12 text-primary"
+                  aria-hidden="true"
+                  strokeWidth="1.5"
+                />
+              </div>
+              <h3 className="text-xl font-semibold leading-7 text-foreground">
+                {loc.title}
+              </h3>
+              <p className="mt-2 flex-auto text-base leading-7 text-muted-foreground">
+                {loc.description}
               </p>
             </div>
-          </div>
-
-          {/* Right Column */}
-          <div>
-            <h3 className="font-body text-[1.75rem] leading-tight font-medium text-text-primary mb-6">
-              Camps & Thematic Villages
-            </h3>
-            <div className="space-y-4 text-base text-text-secondary leading-relaxed">
-              <p>
-                The territory will be divided into villages and experience zones, including:
-              </p>
-              <ul className="list-disc list-outside pl-5 space-y-3 marker:text-accent-coral marker:text-xl">
-                {listItems.map((item, index) => (
-                  <li key={index} className="pl-2">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
