@@ -30,8 +30,8 @@ const deliverables = [
   },
 ];
 
-const DeliverableItem = ({ icon: Icon, title, description }: { icon: React.ElementType; title: string; description: string }) => (
-  <div className="flex flex-col sm:flex-row items-start gap-6">
+const DeliverableItem = ({ icon: Icon, title, description, showImage = false }: { icon: React.ElementType; title: string; description: string; showImage?: boolean }) => (
+  <div className="flex flex-col lg:flex-row items-start gap-6">
     <div className="flex-shrink-0 w-16 h-16 bg-[#E89B7C] rounded-full flex items-center justify-center">
       <Icon className="w-8 h-8 text-[#1f3d3d]" />
     </div>
@@ -39,6 +39,15 @@ const DeliverableItem = ({ icon: Icon, title, description }: { icon: React.Eleme
       <h3 className="text-2xl font-bold font-body text-text-primary">{title}</h3>
       <p className="mt-2 text-base text-text-secondary leading-relaxed">{description}</p>
     </div>
+    {showImage && (
+      <div className="flex-shrink-0">
+        <img
+          src="https://hackmd.io/_uploads/ByLT24r6ex.jpg"
+          alt="Deliverables image"
+          className="w-32 h-32 object-contain rounded-lg"
+        />
+      </div>
+    )}
   </div>
 );
 
@@ -57,6 +66,7 @@ const DeliverablesSection = () => {
                 icon={item.icon}
                 title={item.title}
                 description={item.description}
+                showImage={index === 0}
               />
             ))}
           </div>
