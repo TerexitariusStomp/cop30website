@@ -29,7 +29,7 @@ const LocationSection: React.FC = () => {
                 <strong className="font-semibold text-text-primary">Venue:</strong> Espaço Nautiko – Guamá Riverfront, Belém (PA) – next door to UFPA
               </p>
               <p>
-                The venue will be a <a href="#" className="text-accent-coral underline hover:opacity-80 transition-opacity">living TAZ(Temporary Autonomous Zone)</a>, featuring camping, glamping, a main stage, restaurants, art gallery, wellness tent, plenary, exhibition booths, multimedia art, and community areas. The site will include <strong className="font-semibold text-text-primary">waste management and greywater treatment</strong> .
+                The venue will be a living TAZ(Temporary Autonomous Zone), featuring camping, glamping, a main stage, restaurants, art gallery, wellness tent, plenary, exhibition booths, multimedia art, and community areas. The site will include <strong className="font-semibold text-text-primary">waste management and greywater treatment</strong> .
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ const LocationSection: React.FC = () => {
             </h3>
             <div className="space-y-4 text-base text-text-secondary leading-relaxed">
               <p>
-                The territory will be divided into <a href="#" className="text-accent-coral underline hover:opacity-80 transition-opacity">villages and experience zones</a>, including:
+                The territory will be divided into villages and experience zones, including:
               </p>
               <ul className="list-disc list-outside pl-5 space-y-3 marker:text-accent-coral marker:text-xl">
                 {listItems.map((item, index) => (
