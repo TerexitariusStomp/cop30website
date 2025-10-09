@@ -27,81 +27,77 @@ const thematicAxes: ThematicAxe[] = [
   {
     icon: Sprout,
     title: 'Ecological Jurisprudence',
-    description:
-      'Rights of Nature, common use of the land, sea and space. Autonomous Beings & Territories',
+    description: 'Rights of Nature, common use of the land, sea and space. Autonomous Beings & Territories'
   },
   {
     icon: Trees,
     title: 'Preservation and Restoration of Forests',
-    description: 'Mangroves, Savannas, Oceans, and Ecosystems',
+    description: 'Mangroves, Savannas, Oceans, and Ecosystems'
   },
   {
     icon: Recycle,
-    title: 'Circular Bioeconomy',
-    description: 'Commons, Holistic Management, Minimalism & Post-Growth',
+    title: 'Circular Bioconomy',
+    description: 'Commons, Holistic Management, Minimalism & Post-Growth'
   },
   {
     icon: Landmark,
     title: 'Bioregional Funds',
-    description:
-      'Natural Capital, Regenerative Finance (ReFi) and Green Asset Generation',
+    description: 'Natural Capital, Regenerative Finance (ReFi) and Green Asset Generation'
   },
   {
     icon: Carrot,
-    title: 'Health, Food Sovereignty',
-    description:
-      'Agroforestry, Syntropic Farming, Regenerative Cattle, and Family Agriculture',
+    title: 'Health Food sovereignty',
+    description: 'Agriforestry, Syntropic Farming, Regenerative Cattle and Family Agriculture'
   },
   {
     icon: Blocks,
     title: 'Liquid Democracy',
-    description: 'Gamification (Play2Earn), XR & Blockchain',
+    description: 'Gamification(Play2Earn), XR & Blockchain'
   },
   {
     icon: Palette,
     title: 'Art, Culture, and Living Learning',
-    description: '(Free Education)',
+    description: '(Free Education)'
   },
   {
     icon: Users,
-    title: 'Gender Equanimity',
-    description: 'Youth and Social Development',
+    title: 'Gender equanimity',
+    description: 'youth and social development'
   },
   {
     icon: Tent,
     title: 'Indigenous Culture',
-    description: 'Wisdom, Healings, Land and Space Rights',
+    description: 'Wisdom, Healings, Land and Space rights'
   },
   {
     icon: Handshake,
     title: 'Conflict Resolution',
-    description:
-      'Dialogues for Peace (Ahimsa), Roerich Pact and Banner of Peace',
+    description: 'Dialogues for Peace (Ahimsa), Roerich Pact and Banner of Peace'
   },
   {
     icon: Building2,
     title: 'Smart, Sustainable & Regenerative Cities',
-    description: 'Ecovillages and Neighborhoods',
+    description: 'Ecovillages and Neighborhoods'
   },
   {
     icon: BrainCircuit,
-    title: 'Conscious AI',
-    description: 'Data Centers, Space Exploration, and Quantum Computing',
+    title: 'Conscious; AI',
+    description: 'Data Centers, Space exploration and Quantum Computing'
   },
   {
     icon: UtensilsCrossed,
     title: 'Integral Health',
-    description: 'Medicines, Practices, Wellness, and Self-Knowledge',
+    description: 'Medicines, Practices, Wellness and Self-Knowledge,'
   },
   {
     icon: Droplet,
-    title: 'Sanitation Credits',
-    description: 'Water Treatment & Management',
+    title: 'Sanitation credits',
+    description: 'Water treatment & management'
   },
   {
     icon: UsersRound,
-    title: 'Platform Cooperativism',
-    description: 'Bioregionalism, Systemic Change, and Network Societies',
+    title: 'Platform cooperativism',
+    description: 'bioregionalism, systemic change and network societies'
   },
 ];
 
@@ -131,11 +127,8 @@ const ThematicAxesSection = () => {
                   strokeWidth="1.5"
                 />
               </div>
-              <h3 className="text-xl font-semibold leading-7 text-foreground">
-                {axe.title}
-              </h3>
               <p className="mt-2 flex-auto text-base leading-7 text-muted-foreground">
-                {axe.description}
+                {axe.title + (axe.description ? ' ' + axe.description : '')}
               </p>
             </div>
           ))}
