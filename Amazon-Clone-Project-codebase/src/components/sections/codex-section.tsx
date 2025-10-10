@@ -37,16 +37,16 @@ const CodexSection = () => {
           <p className="text-base text-text-secondary max-w-4xl mx-auto mt-4">
             The A.D.A.s are the code of the human and social software that runs within the territory. They remind us how to act, speak, create, and coexist in a space of freedom, care, and mutual responsibility. For the Temporary Zone of Love and Autonomy (T.A.Z.) to function in peace and wholeness, it is essential that each person is aware and conscious of these agreements, for it is through them that the Village vibrates in harmony, beauty, and truth.
           </p>
-        </div>
-
-        <div className="bg-background-secondary border border-border-subtle rounded-lg p-8 max-w-4xl mx-auto">
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center my-8">
             <img
               src="https://hackmd.io/_uploads/Hy7voJ8plg.jpg"
               alt="Codex image"
               className="w-48 h-48 object-contain rounded-lg"
             />
           </div>
+        </div>
+
+        <div className="bg-background-secondary border border-border-subtle rounded-lg p-8 max-w-4xl mx-auto">
           <h3 className="text-xl font-semibold text-text-primary mb-6 text-center">
             The 17 A.D.A.s – Agreements for Autonomous Development
           </h3>
