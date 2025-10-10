@@ -2,7 +2,7 @@ import React from 'react';
 
 const VisionSection = () => {
   return (
-    <section className="bg-background-primary py-12 mt-16" style={{ backgroundImage: `url('https://hackmd.io/_uploads/B1Lp3VB6gl.jpg')`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat' }}>
+    <section className="bg-background-primary py-12 mt-16" style={{ backgroundImage: `url('https://hackmd.io/_uploads/S1IBzkITll.jpg')`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat' }}>
       <div className="container">
         <h2 className="font-display text-primary text-[2.5rem] leading-none mb-8">
           Vision
