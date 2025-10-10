@@ -13,7 +13,7 @@ const MissionSection = () => {
   ];
 
   return (
-    <section className="bg-background-primary py-24 sm:py-32" style={{ backgroundImage: `url('https://hackmd.io/_uploads/S1IBzkITll.jpg')`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat' }}>
+    <section className="bg-background-primary py-24 sm:py-32" style={{ backgroundImage: `url('https://hackmd.io/_uploads/By8SzkI6le.jpg')`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat' }}>
       <div className="container mx-auto">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="font-display text-[42px] leading-tight text-accent-coral">
