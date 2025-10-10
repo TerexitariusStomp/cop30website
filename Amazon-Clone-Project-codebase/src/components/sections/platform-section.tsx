@@ -21,6 +21,7 @@ const features = [
     icon: Sparkles,
     title: "Symbolic Exchange",
     description: "Symbolic exchange and donation system",
+    image: "https://hackmd.io/_uploads/HJLBGk8Tlg.jpg",
   },
   {
     icon: Leaf,
@@ -43,9 +44,10 @@ interface FeatureCardProps {
   icon: React.ElementType;
   title: string;
   description: string;
+  image?: string;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ icon: Icon, title, description }) => {
+const FeatureCard: React.FC<FeatureCardProps> = ({ icon: Icon, title, description, image }) => {
   return (
     <div className="bg-[rgba(42,74,74,0.5)] p-8 rounded-lg border border-white/10 flex flex-col items-start gap-4 h-full">
       <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mb-2">
@@ -53,6 +55,15 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon: Icon, title, descriptio
       </div>
       <h4 className="text-xl font-semibold text-text-primary">{title}</h4>
       <p className="text-text-secondary text-[0.95rem] leading-relaxed">{description}</p>
+      {image && (
+        <div className="mt-auto">
+          <img
+            src={image}
+            alt={`${title} image`}
+            className="w-16 h-16 object-contain rounded-lg"
+          />
+        </div>
+      )}
     </div>
   );
 };
@@ -86,15 +97,23 @@ const PlatformSection = () => {
           Main Features:
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
               icon={feature.icon}
               title={feature.title}
               description={feature.description}
+              image={feature.image}
             />
           ))}
+          <div className="absolute bottom-0 right-0">
+            <img
+              src="https://hackmd.io/_uploads/HJLBGk8Tlg.jpg"
+              alt="Platform additional image"
+              className="w-32 h-32 object-contain rounded-lg"
+            />
+          </div>
         </div>
       </div>
     </section>
