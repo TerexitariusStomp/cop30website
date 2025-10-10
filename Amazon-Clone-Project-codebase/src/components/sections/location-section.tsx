@@ -31,6 +31,13 @@ const LocationSection: React.FC = () => {
               <p>
                 The venue will be a living TAZ(Temporary Autonomous Zone), featuring camping, glamping, a main stage, restaurants, art gallery, wellness tent, plenary, exhibition booths, multimedia art, and community areas. The site will include <strong className="font-semibold text-text-primary">waste management and greywater treatment</strong> .
               </p>
+              <div className="mt-8">
+                <img
+                  src="https://hackmd.io/_uploads/SyUBG1U6xl.jpg"
+                  alt="Venue image"
+                  className="w-full h-auto rounded-lg object-contain"
+                />
+              </div>
             </div>
           </div>
 
