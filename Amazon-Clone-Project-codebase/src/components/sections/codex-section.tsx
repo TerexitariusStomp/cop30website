@@ -40,6 +40,13 @@ const CodexSection = () => {
         </div>
 
         <div className="bg-background-secondary border border-border-subtle rounded-lg p-8 max-w-4xl mx-auto">
+          <div className="flex justify-center mb-6">
+            <img
+              src="https://hackmd.io/_uploads/Hy7voJ8plg.jpg"
+              alt="Codex image"
+              className="w-48 h-48 object-contain rounded-lg"
+            />
+          </div>
           <h3 className="text-xl font-semibold text-text-primary mb-6 text-center">
             The 17 A.D.A.s – Agreements for Autonomous Development
           </h3>
