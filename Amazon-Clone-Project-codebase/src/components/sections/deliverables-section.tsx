@@ -50,13 +50,6 @@ const DeliverablesSection = () => {
           <h2 className="text-center font-display text-[2.5rem] leading-tight text-text-primary mb-8">
             Deliverables and Legacy
           </h2>
-          <div className="flex justify-center mb-8">
-            <img
-              src="https://hackmd.io/_uploads/SyUBG1U6xl.jpg"
-              alt="Deliverables image"
-              className="w-48 h-48 object-contain rounded-lg"
-            />
-          </div>
           <div className="space-y-8">
             {deliverables.map((item, index) => (
               <DeliverableItem
