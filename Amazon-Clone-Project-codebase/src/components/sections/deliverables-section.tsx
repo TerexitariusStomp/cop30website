@@ -52,7 +52,7 @@ const DeliverablesSection = () => {
           </h2>
           <div className="flex justify-center mb-8">
             <img
-              src="https://hackmd.io/_uploads/ryISz1Iall.jpg"
+              src="https://hackmd.io/_uploads/SyUBG1U6xl.jpg"
               alt="Deliverables image"
               className="w-48 h-48 object-contain rounded-lg"
             />
