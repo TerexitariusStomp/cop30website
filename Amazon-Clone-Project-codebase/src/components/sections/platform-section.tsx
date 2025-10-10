@@ -1,7 +1,14 @@
 import { HeartPulse, MapPin, Users, Sparkles, Leaf, ShoppingBag, Radio } from 'lucide-react';
 import React from 'react';
 
-const features = [
+interface Feature {
+  icon: React.ElementType;
+  title: string;
+  description: string;
+  image?: string;
+}
+
+const features: Feature[] = [
   {
     icon: HeartPulse,
     title: "Social Impact",
