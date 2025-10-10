@@ -25,6 +25,13 @@ const CodexSection = () => {
     <section className="bg-background-primary py-24 sm:py-32">
       <div className="container mx-auto">
         <div className="text-center mb-16">
+          <div className="mb-8">
+            <img
+              src="https://hackmd.io/_uploads/Hy7voJ8plg.jpg"
+              alt="Codex image"
+              className="w-48 h-auto mx-auto rounded-lg object-contain"
+            />
+          </div>
           <h2 className="font-display text-[2.5rem] leading-tight text-text-primary mb-8">
             AMAzone COOP30 CODEX
           </h2>
