@@ -21,7 +21,6 @@ const features = [
     icon: Sparkles,
     title: "Symbolic Exchange",
     description: "Symbolic exchange and donation system",
-    image: "https://hackmd.io/_uploads/HJLBGk8Tlg.jpg",
   },
   {
     icon: Leaf,
