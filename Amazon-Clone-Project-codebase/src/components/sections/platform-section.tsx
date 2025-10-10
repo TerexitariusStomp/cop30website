@@ -59,7 +59,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon: Icon, title, descriptio
 
 const PlatformSection = () => {
   return (
-    <section id="platform" className="py-24 sm:py-32 bg-background-primary relative">
+    <section id="platform" className="py-24 sm:py-32 bg-background-primary">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Left Column - Text */}
@@ -96,13 +96,6 @@ const PlatformSection = () => {
             />
           ))}
         </div>
-      </div>
-      <div className="absolute bottom-4 right-4">
-        <img
-          src="https://hackmd.io/_uploads/HJLBGk8Tlg.jpg"
-          alt="Platform feature image"
-          className="w-32 h-32 object-contain rounded-lg"
-        />
       </div>
     </section>
   );
