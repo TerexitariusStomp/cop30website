@@ -75,7 +75,7 @@ const PlatformSection = () => {
           {/* Right Column - Image */}
           <div className="flex items-center justify-center">
             <img
-              src="https://hackmd.io/_uploads/SJ8T2VBaeg.jpg"
+              src="https://hackmd.io/_uploads/BJIBz1Uplx.jpg"
               alt="AMAzona network platform"
               className="w-full h-auto rounded-lg object-contain max-w-md"
             />
