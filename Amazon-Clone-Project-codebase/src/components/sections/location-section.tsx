@@ -33,7 +33,7 @@ const LocationSection: React.FC = () => {
               </p>
               <div className="mt-8">
                 <img
-                  src="https://hackmd.io/_uploads/S1LT3NBaxl.jpg"
+                  src="https://hackmd.io/_uploads/S1IBzkITll.jpg"
                   alt="Venue image"
                   className="w-full h-auto rounded-lg object-contain"
                 />
