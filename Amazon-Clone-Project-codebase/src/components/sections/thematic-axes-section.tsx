@@ -104,15 +104,8 @@ const thematicAxes: ThematicAxe[] = [
 const ThematicAxesSection = () => {
   return (
     <section className="bg-background-primary text-text-primary py-24 sm:py-32">
-      <div className="grid grid-cols-3 min-h-[800px]">
-        <div className="flex items-center justify-center">
-          <img
-            src="https://hackmd.io/_uploads/S1U6n4Hagl.jpg"
-            alt="Left thematic image"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="px-6 md:px-8 flex flex-col justify-center">
+      <div className="container mx-auto px-6 md:px-8">
+        <div className="flex flex-col justify-center">
           <h2 className="text-[2.625rem] leading-[1.3] text-text-primary text-center mb-12">
             Thematic Axes
           </h2>
@@ -139,13 +132,6 @@ const ThematicAxesSection = () => {
               </div>
             ))}
           </div>
-        </div>
-        <div className="flex items-center justify-center">
-          <img
-            src="https://hackmd.io/_uploads/r1Iph4B6xe.jpg"
-            alt="Right thematic image"
-            className="w-full h-full object-cover"
-          />
         </div>
       </div>
     </section>
