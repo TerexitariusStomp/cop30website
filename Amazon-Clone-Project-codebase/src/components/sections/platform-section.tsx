@@ -85,13 +85,6 @@ const PlatformSection = () => {
               image={feature.image}
             />
           ))}
-          <div className="absolute bottom-0 right-0">
-            <img
-              src="https://hackmd.io/_uploads/HJLBGk8Tlg.jpg"
-              alt={t('platform.image.extra.alt')}
-              className="w-32 h-32 object-contain rounded-lg"
-            />
-          </div>
         </div>
       </div>
     </section>
