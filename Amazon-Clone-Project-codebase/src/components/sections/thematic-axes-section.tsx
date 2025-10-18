@@ -16,6 +16,7 @@ import {
   Droplet,
   UsersRound,
 } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 type ThematicAxe = {
   icon: React.ElementType;
@@ -23,98 +24,36 @@ type ThematicAxe = {
   description: string;
 };
 
-const thematicAxes: ThematicAxe[] = [
-  {
-    icon: Sprout,
-    title: 'Ecological Jurisprudence, Rights of Nature, common use of the land, sea and space. Autonomous Beings & Territories',
-    description: ''
-  },
-  {
-    icon: Trees,
-    title: 'Preservation and Restoration of Forests, Mangroves, Savannas, Oceans, and Ecosystems',
-    description: ''
-  },
-  {
-    icon: Recycle,
-    title: 'Circular Bioconomy, Commons, Holistic Management, Minimalism & Post-Growth',
-    description: ''
-  },
-  {
-    icon: Landmark,
-    title: 'Bioregional Funds, Natural Capital, Regenerative Finance (ReFi) and Green Asset Generation',
-    description: ''
-  },
-  {
-    icon: Carrot,
-    title: 'Health Food sovereignty, Agriforestry, Syntropic Farming, Regenerative Cattle and Family Agriculture',
-    description: ''
-  },
-  {
-    icon: Blocks,
-    title: 'Liquid Democracy, Gamification(Play2Earn), XR & Blockchain',
-    description: ''
-  },
-  {
-    icon: Palette,
-    title: 'Art, Culture, and Living Learning(Free Education)',
-    description: ''
-  },
-  {
-    icon: Users,
-    title: 'Gender equanimity, youth and social development',
-    description: ''
-  },
-  {
-    icon: Tent,
-    title: 'Indigenous Culture, Wisdom, Healings, Land and Space rights',
-    description: ''
-  },
-  {
-    icon: Handshake,
-    title: 'Conflict Resolution,  Dialogues for Peace (Ahimsa),  Roerich Pact and Banner of Peace',
-    description: ''
-  },
-  {
-    icon: Building2,
-    title: 'Smart, Sustainable & Regenerative Cities, Ecovillages and Neighborhoods',
-    description: ''
-  },
-  {
-    icon: BrainCircuit,
-    title: 'Conscious; AI, Data Centers, Space exploration and Quantum Computing',
-    description: ''
-  },
-  {
-    icon: UtensilsCrossed,
-    title: 'Integral Health, Medicines, Practices, Wellness and Self-Knowledge,',
-    description: ''
-  },
-  {
-    icon: Droplet,
-    title: 'Sanitation credits, Water treatment & management',
-    description: ''
-  },
-  {
-    icon: UsersRound,
-    title: 'Platform cooperativism, bioregionalism, systemic change and network societies',
-    description: ''
-  },
+const makeAxes = (t: (k: string) => string): ThematicAxe[] => [
+  { icon: Sprout, title: t('axes.1'), description: '' },
+  { icon: Trees, title: t('axes.2'), description: '' },
+  { icon: Recycle, title: t('axes.3'), description: '' },
+  { icon: Landmark, title: t('axes.4'), description: '' },
+  { icon: Carrot, title: t('axes.5'), description: '' },
+  { icon: Blocks, title: t('axes.6'), description: '' },
+  { icon: Palette, title: t('axes.7'), description: '' },
+  { icon: Users, title: t('axes.8'), description: '' },
+  { icon: Tent, title: t('axes.9'), description: '' },
+  { icon: Handshake, title: t('axes.10'), description: '' },
+  { icon: Building2, title: t('axes.11'), description: '' },
+  { icon: BrainCircuit, title: t('axes.12'), description: '' },
+  { icon: UtensilsCrossed, title: t('axes.13'), description: '' },
+  { icon: Droplet, title: t('axes.14'), description: '' },
+  { icon: UsersRound, title: t('axes.15'), description: '' },
 ];
 
 const ThematicAxesSection = () => {
+  const { t } = useLanguage();
+  const thematicAxes = makeAxes(t);
   return (
     <section className="bg-background-primary text-text-primary py-24 sm:py-32">
       <div className="container mx-auto px-6 md:px-8">
         <div className="flex flex-col justify-center">
-          <h2 className="text-[2.625rem] leading-[1.3] text-text-primary text-center mb-12">
-            Thematic Axes
-          </h2>
+          <h2 className="text-[2.625rem] leading-[1.3] text-text-primary text-center mb-12">{t('axes.title')}</h2>
           <p className="text-lg leading-8 text-text-secondary text-center max-w-md mx-auto mb-12">
-            The AMAzone COOP30 program integrates the central themes of{' '}
-            <span className="text-accent-orange underline">
-              glocal regeneration
-            </span>
-            :
+            {t('axes.lead.prefix')}
+            <span className="text-accent-orange underline">{t('axes.lead.span')}</span>
+            {t('axes.lead.suffix')}
           </p>
           <div className="space-y-8">
             {thematicAxes.map((axe, index) => (

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 type Milestone = {
   number: string;
@@ -7,17 +8,17 @@ type Milestone = {
   align: 'left' | 'right';
 };
 
-const milestones: Milestone[] = [
+const makeMilestones = (t: (k: string) => string): Milestone[] => [
   {
     number: "1",
-    date: "October 23–24 – São Paulo",
+    date: t("roadmap.1.date"),
     content: (
       <>
         <p>
-          <strong className="font-bold text-text-primary">PATH to COOP30</strong> – Caravans Gathering Pre-COP at Path Festival.
+          <strong className="font-bold text-text-primary">PATH to COOP30</strong> – {t("roadmap.1.content")}
         </p>
-        <a href="https://festivalpath.com.br/" target="_blank" rel="noopener noreferrer" className="text-accent-orange underline hover:opacity-80 transition-opacity mt-2 inline-block break-all">
-          https://festivalpath.com.br/
+        <a href={t("roadmap.1.link")} target="_blank" rel="noopener noreferrer" className="text-accent-orange underline hover:opacity-80 transition-opacity mt-2 inline-block break-all">
+          {t("roadmap.1.link")}
         </a>
       </>
     ),
@@ -25,30 +26,30 @@ const milestones: Milestone[] = [
   },
   {
     number: "2",
-    date: "November 1 – Belém",
+    date: t("roadmap.2.date"),
     content: (
       <p>
-        Launch of the AMAzone.network platform: a gamified phygital platform to map and develop projects in network; promote events, courses, training, crowdfunding, marketplace, and streaming with <span className="text-text-primary">onchain (Web3)</span> integration.
+        {t("roadmap.2.content").replace("onchain (Web3)", "")}<span className="text-text-primary">onchain (Web3)</span>{" "}
       </p>
     ),
     align: "right",
   },
   {
     number: "3",
-    date: "November 5–21 – Belém (TAZ)",
+    date: t("roadmap.3.date"),
     content: (
       <p>
-        <strong className="font-bold text-text-primary">AMAzone COOP30 – Temporary Autonomous Zone:</strong> A Regenerative Future Territory; a cultural, scientific, and regenerative village integrated with the Indigenous Camp and neighboring the People's Summit.
+        <strong className="font-bold text-text-primary">AMAzone COOP30 – Temporary Autonomous Zone:</strong> {t("roadmap.3.content")}
       </p>
     ),
     align: "left",
   },
   {
     number: "4",
-    date: "November 23–29 – Breves – Marajó Island (PAZ)",
+    date: t("roadmap.4.date"),
     content: (
       <p>
-        <strong className="font-bold text-text-primary">AMAzone POC30 – Permaculture Autonomous Zone:</strong> A permacultural autonomous zone where we will test regenerative practices through 30PoCs(Proof of Concepts) and present data through a DeSci (Decentralized Science) methodology. Formation of the 0r1Gen Think & DAO Tank and training of the AMAzone Guardians, who will be agents of conservation and restoration of the Amazon Biome, integrated with the creation of the BiomaH Credit, endorsed by Dr. Carlos Nobre.
+        <strong className="font-bold text-text-primary">AMAzone POC30 – Permaculture Autonomous Zone:</strong> {t("roadmap.4.content")}
       </p>
     ),
     align: "right",
@@ -94,11 +95,13 @@ const MilestoneItem = ({ date, content, number, align }: Milestone) => {
 };
 
 const RoadmapSection = () => {
+  const { t } = useLanguage();
+  const milestones = makeMilestones(t);
   return (
     <section className="bg-background-primary py-24 sm:py-32">
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
         <h2 className="text-center font-display text-4xl text-text-primary md:text-5xl">
-          Road Map to AMAz<span className="font-bold">one</span>
+          {t('roadmap.title')}
         </h2>
         <div className="relative mt-20">
           <div

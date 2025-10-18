@@ -1,33 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import { Gamepad2, Network, Sprout, Shield, Archive } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
-const deliverables = [
-  {
-    icon: Gamepad2,
-    title: "AMAzone Think & DAO Tank",
-    description: "Decentralized governance of the ecosystem",
-  },
-  {
-    icon: Network,
-    title: "Regenerative Confederation of G.A.I.A",
-    description: "(Great Alliance for Integrity and Autonomy) — Network of cooperatives, associations, and movements",
-  },
-  {
-    icon: Sprout,
-    title: "BiomaH Credits",
-    description: "New metric and asset based on holistic land management and data mined by humans and AI",
-  },
-  {
-    icon: Shield,
-    title: "AMAzone Guardians Network",
-    description: "Training and certification of regenerative leaders to protect and originate BiomaH credits and green assets",
-  },
-  {
-    icon: Archive,
-    title: "AMAzone Cartography- Living Archive of the Amazon Communities",
-    description: "Data, art, medicines and stories from the Amazon territories",
-  },
+const makeDeliverables = (t: (k: string) => string) => [
+  { icon: Gamepad2, title: t('deliverable.1.title'), description: t('deliverable.1.desc') },
+  { icon: Network, title: t('deliverable.2.title'), description: t('deliverable.2.desc') },
+  { icon: Sprout, title: t('deliverable.3.title'), description: t('deliverable.3.desc') },
+  { icon: Shield, title: t('deliverable.4.title'), description: t('deliverable.4.desc') },
+  { icon: Archive, title: t('deliverable.5.title'), description: t('deliverable.5.desc') },
 ];
 
 const DeliverableItem = ({ icon: Icon, title, description }: { icon: React.ElementType; title: string; description: string }) => (
@@ -43,13 +24,13 @@ const DeliverableItem = ({ icon: Icon, title, description }: { icon: React.Eleme
 );
 
 const DeliverablesSection = () => {
+  const { t } = useLanguage();
+  const deliverables = makeDeliverables(t);
   return (
     <section style={{ backgroundImage: `url('https://hackmd.io/_uploads/SkIBGk8Tee.jpg')`, backgroundColor: '#E89B7C', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'multiply' }} className="py-24 sm:py-32">
       <div className="container">
         <div className="bg-[#1f3d3d]/90 rounded-2xl shadow-lg p-12 backdrop-blur-sm">
-          <h2 className="text-center font-display text-[2.5rem] leading-tight text-text-primary mb-8">
-            Deliverables and Legacy
-          </h2>
+          <h2 className="text-center font-display text-[2.5rem] leading-tight text-text-primary mb-8">{t('deliverables.title')}</h2>
           <div className="space-y-8">
             {deliverables.map((item, index) => (
               <DeliverableItem
