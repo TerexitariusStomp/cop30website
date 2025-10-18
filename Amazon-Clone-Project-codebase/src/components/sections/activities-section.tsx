@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const ActivityCard = ({ title, items }: { title: string; items: string[] }) => (
   <div className="bg-background-secondary border border-border-subtle rounded-lg p-6 h-full">
@@ -14,23 +15,15 @@ const ActivityCard = ({ title, items }: { title: string; items: string[] }) => (
 );
 
 const ActivitiesSection = () => {
-  const learningItems = [
-    'Workshops, lectures, and masterclasses',
-    'Vision councils and forums',
-    'Thematic panels and project launches',
-  ];
-
-  const showcaseItems = [
-    'Fairs, exhibitions, and showcases',
-    'Regenerative hackathons and impact bootcamps',
-  ];
-
+  const { t } = useLanguage();
+  const learningItems = [t('activities.item.1'), t('activities.item.2'), t('activities.item.3')];
+  const showcaseItems = [t('activities.item.4'), t('activities.item.5')];
   const cultureItems = [
-    'Concerts, ceremonies, rituals, and night experiences',
-    'Healing spaces and integrative practices',
-    'Boat rides',
-    'Videomapping & multisensory dinners and experiences',
-    'Ecstatic Dance, Contact and Improvisation',
+    t('activities.item.6'),
+    t('activities.item.7'),
+    t('activities.item.8'),
+    t('activities.item.9'),
+    t('activities.item.10'),
   ];
 
   return (
@@ -40,7 +33,7 @@ const ActivitiesSection = () => {
           <div className="relative w-full min-h-[400px] lg:min-h-[750px] rounded-lg overflow-hidden">
             <Image
               src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f9dbff3c-828d-4087-a500-734899d703f7-amazone-coop30-on77bsx-gamma-site/assets/images/photo-1603260913204-7c37bdec19bd-2.webp"
-              alt="People in canoes on a river in a forest setting"
+              alt={t('activities.image.alt')}
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -51,20 +44,18 @@ const ActivitiesSection = () => {
               className="text-text-primary mb-6"
               style={{ fontFamily: 'var(--font-display)', fontSize: '2.25rem', lineHeight: 1.3 }}
             >
-              Activities and Experiences
+              {t('activities.title')}
             </h2>
             <p className="text-lg text-text-primary mb-8 leading-relaxed">
-              The AMAzone COOP30 is an immersive gathering that unites{' '}
-              <span className="text-primary font-semibold">body, mind, and spirit</span>, science and art,
-              ancestry and technology. During the event, there will be:
+              {t('activities.lead')}
             </p>
             <div className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <ActivityCard title="Learning & Knowledge" items={learningItems} />
-                <ActivityCard title="Showcase & Innovation" items={showcaseItems} />
+                <ActivityCard title={t('activities.group.learning')} items={learningItems} />
+                <ActivityCard title={t('activities.group.showcase')} items={showcaseItems} />
               </div>
               <div>
-                <ActivityCard title="Culture & Healing" items={cultureItems} />
+                <ActivityCard title={t('activities.group.culture')} items={cultureItems} />
               </div>
             </div>
           </div>
