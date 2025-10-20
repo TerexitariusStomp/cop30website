@@ -15,7 +15,7 @@ const makeMilestones = (t: (k: string) => string): Milestone[] => [
     content: (
       <>
         <p>
-          <strong className="font-bold text-text-primary">PATH to COOP30</strong> – {t("roadmap.1.content")}
+          <strong className="font-bold text-text-primary">{t("roadmap.1.title")}</strong> – {t("roadmap.1.content")}
         </p>
         <a href={t("roadmap.1.link")} target="_blank" rel="noopener noreferrer" className="text-accent-orange underline hover:opacity-80 transition-opacity mt-2 inline-block break-all">
           {t("roadmap.1.link")}
@@ -39,7 +39,7 @@ const makeMilestones = (t: (k: string) => string): Milestone[] => [
     date: t("roadmap.3.date"),
     content: (
       <p>
-        <strong className="font-bold text-text-primary">AMAzone COOP30 – Temporary Autonomous Zone:</strong> {t("roadmap.3.content")}
+        <strong className="font-bold text-text-primary">{t("roadmap.3.title")}</strong> {t("roadmap.3.content")}
       </p>
     ),
     align: "left",
@@ -49,7 +49,7 @@ const makeMilestones = (t: (k: string) => string): Milestone[] => [
     date: t("roadmap.4.date"),
     content: (
       <p>
-        <strong className="font-bold text-text-primary">AMAzone POC30 – Permaculture Autonomous Zone:</strong> {t("roadmap.4.content")}
+        <strong className="font-bold text-text-primary">{t("roadmap.4.title")}</strong> {t("roadmap.4.content")}
       </p>
     ),
     align: "right",

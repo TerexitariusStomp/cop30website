@@ -39,13 +39,13 @@ const ticketDataPt: TicketTier[] = [
   { category: 'Passe AMAzone', value: 'GRÁTIS', includes: 'Acesso geral + experiências abertas' },
   {
     category: 'Camping',
-    value: '30 (barraca pessoal) / 50 (nossa barraca) / 70 (com barraca + colchão inflável) por dia',
+    value: '150 (barraca pessoal) / 220 (nossa barraca) / 280 (com barraca + colchão inflável) por dia',
     includes: 'Espaço coletivo + banheiro + cozinha comunitária',
   },
-  { category: 'Glamping', value: '100 / dia', includes: 'Barraca equipada + energia + conforto' },
-  { category: 'Motorhome / Trailer', value: '50 / dia', includes: 'Estacionamento com água e energia' },
-  { category: 'Espaço para Palestra / Show', value: '600 / dia', includes: 'Palco + som + equipe' },
-  { category: 'Estande / Exposição', value: '2000 (pacote 5–22 Nov)', includes: 'Tenda 3x3m + energia + promoção' },
+  { category: 'Glamping', value: '500 / dia e por pessoa', includes: 'Barraca equipada + energia + conforto' },
+  { category: 'Motorhome / Trailer', value: '500 / dia', includes: 'Estacionamento com água e energia' },
+  { category: 'Espaço para Palestra / Show', value: '2300 / dia', includes: 'Palco + som + equipe' },
+  { category: 'Estande / Exposição', value: '10.000 (pacote 5–22 Nov)', includes: 'Tenda 3x3m + energia + promoção' },
   {
     category: (
       <>
@@ -55,11 +55,11 @@ const ticketDataPt: TicketTier[] = [
         </span>
       </>
     ),
-    value: '1.000 / 15 dias de exposição',
+    value: '5.000 / 15 dias de exposição',
     includes: 'Pavilhão de Arte + 2 coquetéis + comunicação',
   },
-  { category: 'Restaurantes / Hubs de Alimentação', value: '2.000 + % das vendas', includes: 'Espaço fixo + visibilidade na mídia' },
-  { category: 'Pacotes de Patrocínio', value: '5k – 500k', includes: 'Ativações, painéis e branding COP30' },
+  { category: 'Restaurantes / Hubs de Alimentação', value: '10.000 + % das vendas', includes: 'Espaço fixo + visibilidade na mídia' },
+  { category: 'Pacotes de Patrocínio', value: '50k – 2mm', includes: 'Ativações, painéis e branding COP30' },
 ];
 
 const PricingSection = () => {

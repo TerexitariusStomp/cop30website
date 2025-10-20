@@ -5,8 +5,8 @@ type Dict = Record<string, string>;
 export const translations: Record<Lang, Dict> = {
   en: {
     // Hero
-    "hero.alt": "AMAZONE hexagonal tech-tree logo",
-    "hero.title": "AMAZONE COOP30",
+    "hero.alt": "AMAzone hexagonal tech-tree logo",
+    "hero.title": "",
     "hero.tagline": "In autonomy, we trust",
 
     // Intro
@@ -36,18 +36,21 @@ export const translations: Record<Lang, Dict> = {
 
     // Roadmap
     "roadmap.title": "Road Map to AMAzone",
+    "roadmap.1.title": "PATH to COOP30",
     "roadmap.1.date": "October 23–24 — São Paulo",
-    "roadmap.1.content": "PATH to COOP30 — Caravans Gathering Pre-COP at Path Festival.",
+    "roadmap.1.content": "Caravans Gathering Pre-COP at Path Festival.",
     "roadmap.1.link": "https://festivalpath.com.br/",
     "roadmap.2.date": "November 1 — Belém",
     "roadmap.2.content":
       "Launch of the AMAzone.network platform: a gamified phygital platform to map and develop projects in network; promote events, courses, training, crowdfunding, marketplace, and streaming with onchain (Web3) integration.",
+    "roadmap.3.title": "AMAzone COOP30 — Temporary Autonomous Zone:",
     "roadmap.3.date": "November 5–21 — Belém (TAZ)",
     "roadmap.3.content":
-      "AMAzone COOP30 — Temporary Autonomous Zone: A Regenerative Future Territory; a cultural, scientific, and regenerative village integrated with the Indigenous Camp and neighboring the People's Summit.",
+      "A Regenerative Future Territory; a cultural, scientific, and regenerative village integrated with the Indigenous Camp and neighboring the People's Summit.",
+    "roadmap.4.title": "AMAzone POC30 — Permaculture Autonomous Zone:",
     "roadmap.4.date": "November 23–29 — Breves — Marajó Island (PAZ)",
     "roadmap.4.content":
-      "AMAzone POC30 — Permaculture Autonomous Zone: A permacultural autonomous zone where we will test regenerative practices through 30 PoCs (Proof of Concepts) and present data through a DeSci (Decentralized Science) methodology. Formation of the 0r1Gen Think & DAO Tank and training of the AMAzone Guardians, who will be agents of conservation and restoration of the Amazon Biome, integrated with the creation of the BiomaH Credit, endorsed by Dr. Carlos Nobre.",
+      "A permacultural autonomous zone where we will test regenerative practices through 30 PoCs (Proof of Concepts) and present data through a DeSci (Decentralized Science) methodology. Formation of the 0r1Gen Think & DAO Tank and training of the AMAzone Guardians, who will be agents of conservation and restoration of the Amazon Biome, integrated with the creation of the BiomaH Credit, endorsed by Dr. Carlos Nobre.",
 
     // Platform
     "platform.title": "AMAzone.network Platform",
@@ -77,9 +80,9 @@ export const translations: Record<Lang, Dict> = {
     "axes.lead.suffix": ":",
     "axes.1": "Ecological Jurisprudence, Rights of Nature, common use of the land, sea and space. Autonomous Beings & Territories",
     "axes.2": "Preservation and Restoration of Forests, Mangroves, Savannas, Oceans, and Ecosystems",
-    "axes.3": "Circular Bioeconomy, Commons, Holistic Management, Minimalism & Post-Growth",
+    "axes.3": "Circular Bioconomy, Commons, Holistic Management, Minimalism & Post-Growth",
     "axes.4": "Bioregional Funds, Natural Capital, Regenerative Finance (ReFi) and Green Asset Generation",
-    "axes.5": "Healthy Food Sovereignty, Agriforestry, Syntropic Farming, Regenerative Cattle and Family Agriculture",
+    "axes.5": "Health Food sovereignty, Agriforestry, Syntropic Farming, Regenerative Cattle and Family Agriculture",
     "axes.6": "Liquid Democracy, Gamification (Play2Earn), XR & Blockchain",
     "axes.7": "Art, Culture, and Living Learning (Free Education)",
     "axes.8": "Gender equanimity, youth and social development",
@@ -117,9 +120,9 @@ export const translations: Record<Lang, Dict> = {
     "location.venue.line2":
       "The venue will be a living TAZ (Temporary Autonomous Zone), featuring camping, glamping, a main stage, restaurants, art gallery, wellness tent, plenary, exhibition booths, multimedia art, and community areas. The site will include ",
     "location.venue.line2.strong": "waste management and greywater treatment",
+    "location.image.alt": "Venue image",
     "location.camps.title": "Camps & Thematic Villages",
     "location.camps.intro": "The territory will be divided into villages and experience zones, including:",
-    "location.image.alt": "Venue image",
     "location.item.1": "Camping & Glamping Zones",
     "location.item.2": "Indigenous Village & Village of Love",
     "location.item.3": "Altar of Intentions — Art Installation for Prayer, Ceremonies & Structured Water",
@@ -127,9 +130,6 @@ export const translations: Record<Lang, Dict> = {
     "location.item.5": "Startup Societies Village — Ethical AI, Web3 and DAO",
     "location.item.6": "G.A.I.A. Village — Articulation of Autonomous Territories and Ecovillage Network",
     "location.item.7": "AMAzone Guardians' Camp — Regenerative Leadership Training",
-
-    // Platform imagery alt (additional)
-    "platform.image.extra.alt": "Platform additional image",
 
     // Deliverables
     "deliverables.title": "Deliverables and Legacy",
@@ -190,48 +190,51 @@ export const translations: Record<Lang, Dict> = {
   pt: {
     // Hero
     "hero.alt": "Logotipo hexagonal tech-tree AMAZONE",
-    "hero.title": "AMAZONE COOP30",
-    "hero.tagline": "Em autonomia, confiamos",
+    "hero.title": "COOP30",
+    "hero.tagline": "Em autonomia, nós confiamos!",
 
     // Intro
     "intro.alt": "Barcos de madeira em um rio calmo, evocando tranquilidade e conexão com a natureza.",
     "intro.p1":
-      "A AMAzone COOP30 é uma Zona Autônoma Temporária (TAZ) conectada à Cúpula dos Povos e ao Acampamento Indígena e Quilombola na COP30, localizada às margens do rio Guamá, em Belém (PA), de 5 a 22 de novembro de 2025. Somos uma ponte viva entre ancestralidade e inovação, reunindo cooperativas, associações, startups, artistas, ativistas, cientistas, investidores de impacto e comunidades em uma experiência de ",
+      "O AMAzone COOP30 é uma Zona Autônoma Temporária (TAZ) conectada à Cúpula dos Povos e ao Acampamento Indígena e Quilombola na COP30, localizada às margens do rio Guamá, em Belém (PA), de 5 a 22 de novembro de 2025. Somos uma ponte viva entre ancestralidade e inovação, reunindo cooperativas, associações, startups, artistas, ativistas, cientistas, investidores de impacto e comunidades em uma experiência de ",
     "intro.p1.span": "cooperação, regeneração e cultura",
     "intro.quote": "Aqui, a integridade é o eixo, a autonomia é o caminho, e o amor é a lei.",
 
     // Vision
     "vision.title": "Visão",
     "vision.body":
-      "A Vila AMAzone é um experimento sociocultural que demonstra, na prática, como o bem viver, a permacultura, a ciência, a arte, a tecnologia e a espiritualidade podem caminhar juntos rumo a um futuro regenerativo. É uma demonstração viva de como os povos indígenas e as comunidades intencionais podem inspirar um modelo de futuro baseado em integridade, autonomia, resiliência e interdependência.",
+      "A Aldeia AMAzone é um experimento sociocultural que demonstra, na prática, como o bem viver, a permacultura, a ciência, a arte, a tecnologia e a espiritualidade podem caminhar juntos rumo a um futuro regenerativo. É uma demonstração viva de como os povos indígenas e as comunidades intencionais podem inspirar um modelo de futuro baseado em integridade, autonomia, resiliência e interdependência.",
 
     // Mission
     "mission.title": "*Missão",
     "mission.lead":
-      "Ativar territórios autônomos (terras sem fronteiras) e construir uma rede figital (física + digital) de Guardiões de G.A.I.A. (Grande Aliança de Integridade & Autonomia), integrando:",
+      "Ativar territórios autônomos (terras sem fronteiras) e construir uma rede phigital (física + digital) de Guardiões de G.A.I.A. (Grande Aliança de Integridade & Autonomia), integrando:",
     "mission.items.0": "Design Regenerativo",
     "mission.items.1": "Gestão Holística",
     "mission.items.2": "Pensamento Sistêmico",
     "mission.items.3": "Arte e Ativismo",
     "mission.items.4": "Bioeconomia",
     "mission.items.5": "IA Consciente, Web3 & Tecnologia",
-    "mission.items.6": "Inovação Aberta",
-    "mission.items.7": "Saberes Ancestrais",
+    "mission.items.6": "Inovação Aberta & Cooperativismo",
+    "mission.items.7": "Saberes Ancestrais & Física Quântica",
 
     // Roadmap
     "roadmap.title": "Roteiro para a AMAzone",
+    "roadmap.1.title": "PATH para a COOP30",
     "roadmap.1.date": "23–24 de outubro — São Paulo",
-    "roadmap.1.content": "PATH para a COOP30 — Encontro das Caravanas Pré-COP no Festival Path.",
+    "roadmap.1.content": "Encontro das Caravanas Pré-COP no Festival Path.",
     "roadmap.1.link": "https://festivalpath.com.br/",
     "roadmap.2.date": "1º de novembro — Belém",
     "roadmap.2.content":
       "Lançamento da plataforma AMAzone.network: uma plataforma figital gamificada para mapear e desenvolver projetos em rede; promover eventos, cursos, formações, financiamento coletivo, marketplace e streaming com integração onchain (Web3).",
+    "roadmap.3.title": "AMAzone COOP30 — Zona Autônoma Temporária:",
     "roadmap.3.date": "5–21 de novembro — Belém (TAZ)",
     "roadmap.3.content":
-      "AMAzone COOP30 — Zona Autônoma Temporária: Um Território de Futuro Regenerativo; uma vila cultural, científica e regenerativa integrada ao Acampamento Indígena e vizinha à Cúpula dos Povos.",
+      "Um Território do Futuro Regenerativo; uma vila cultural, científica e regenerativa integrada ao Acampamento Indígena e vizinha à Cúpula dos Povos.",
+    "roadmap.4.title": "AMAzone POC30 — Zona Autônoma de Permacultura:",
     "roadmap.4.date": "23–29 de novembro — Breves — Ilha do Marajó (PAZ)",
     "roadmap.4.content":
-      "AMAzone POC30 — Zona Autônoma de Permacultura: Uma zona autônoma permacultural onde testaremos práticas regenerativas por meio de 30 PoCs (Provas de Conceito) e apresentaremos dados por uma metodologia DeSci (Ciência Descentralizada). Formação do 0r1Gen Think & DAO Tank e treinamento dos Guardiões da AMAzone, que serão agentes de conservação e restauração do Bioma Amazônico, integrados à criação do Crédito BiomaH, endossado pelo Dr. Carlos Nobre.",
+      "Uma zona autônoma permacultural onde testaremos práticas regenerativas por meio de 30 PoCs (Provas de Conceito) e apresentaremos dados por uma metodologia DeSci (Ciência Descentralizada). Formação do 0r1Gen Think & DAO Tank e treinamento dos Guardiões da AMAzone, que serão agentes de conservação e restauração do Bioma Amazônico, integrados à criação do Crédito BiomaH, endossado pelo Dr. Carlos Nobre.",
 
     // Platform
     "platform.title": "Plataforma AMAzone.network",
@@ -253,7 +256,6 @@ export const translations: Record<Lang, Dict> = {
     "platform.feature.learning.title": "Aprendizado Digital",
     "platform.feature.learning.desc": "Streaming, cursos online e comunidades",
     "platform.image.alt": "Plataforma AMAzone",
-    "platform.image.extra.alt": "Imagem adicional da plataforma",
 
     // Thematic Axes
     "axes.title": "Eixos Temáticos",
@@ -281,15 +283,15 @@ export const translations: Record<Lang, Dict> = {
     "activities.title": "Atividades e Experiências",
     "activities.lead":
       "A AMAzone COOP30 é um encontro imersivo que une corpo, mente e espírito, ciência e arte, ancestralidade e tecnologia. Durante o evento, haverá:",
-    "activities.group.learning": "Aprendizado & Conhecimento",
-    "activities.group.showcase": "Vitrine & Inovação",
+    "activities.group.learning": "Aprendizado & Cooperação",
+    "activities.group.showcase": "Ancestralidade & Inovação",
     "activities.group.culture": "Cultura & Cura",
     "activities.item.1": "Oficinas, palestras e masterclasses",
     "activities.item.2": "Conselhos de visão e fóruns",
     "activities.item.3": "Painéis temáticos e lançamentos de projetos",
     "activities.item.4": "Feiras, exposições e vitrines",
     "activities.item.5": "Hackathons regenerativos e bootcamps de impacto",
-    "activities.item.6": "Shows, cerimônias, rituais e experiências noturnas",
+    "activities.item.6": "Shows, cerimônias, rituais e festasnoturnas",
     "activities.item.7": "Espaços de cura e práticas integrativas",
     "activities.item.8": "Passeios de barco",
     "activities.item.9": "Videomapping & jantares e experiências multissensoriais",
@@ -302,19 +304,16 @@ export const translations: Record<Lang, Dict> = {
     "location.venue.line2":
       "A localização será uma TAZ viva (Zona Autônoma Temporária), com camping, glamping, palco principal, restaurantes, galeria de arte, tenda de bem-estar, plenária, estandes de exposição, arte multimídia e áreas de convivência. O espaço incluirá ",
     "location.venue.line2.strong": "gestão de resíduos e tratamento de águas cinzas",
+    "location.image.alt": "Imagem do local",
     "location.camps.title": "Acampamentos & Vilas Temáticas",
     "location.camps.intro": "O território será dividido em vilas e zonas de experiência, incluindo:",
-    "location.image.alt": "Imagem do local",
     "location.item.1": "Zonas de Camping & Glamping",
     "location.item.2": "Aldeia Indígena & Vila do Amor",
-    "location.item.3": "Altar das Intenções - Instalação de Arte para Oração, Cerimônias & Água Estruturada",
+    "location.item.3": "Altar das Intenções — Instalação de Arte para Oração, Cerimônias & Água Estruturada",
     "location.item.4": "HUBiomaH — Inovação e Bioeconomia",
     "location.item.5": "Vila de Sociedades Startup — IA Ética, Web3 e DAO",
     "location.item.6": "Vila G.A.I.A. — Articulação de Territórios Autônomos e Rede de Ecovilas",
     "location.item.7": "Acampamento dos Guardiões da AMAzone — Formação em Liderança Regenerativa",
-
-    // Platform imagery alt (additional)
-    "platform.image.extra.alt": "Imagem adicional da plataforma",
 
     // Deliverables
     "deliverables.title": "Entregas e Legado",
@@ -332,7 +331,7 @@ export const translations: Record<Lang, Dict> = {
     // Pricing
     "pricing.title": "Valores e Ingressos",
     "pricing.th.category": "Categoria",
-    "pricing.th.value": "Valor (U$)",
+    "pricing.th.value": "Valor ($$)",
     "pricing.th.includes": "Inclui",
 
     // Codex
