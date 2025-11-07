@@ -1,14 +1,12 @@
 import React from 'react';
-import Image from 'next/image';
-import { Gamepad2, Network, Sprout, Shield, Archive } from 'lucide-react';
+import { Network, Sprout, Shield, Archive } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const makeDeliverables = (t: (k: string) => string) => [
-  { icon: Gamepad2, title: t('deliverable.1.title'), description: t('deliverable.1.desc') },
+  { icon: Archive, title: t('deliverable.1.title'), description: t('deliverable.1.desc') },
   { icon: Network, title: t('deliverable.2.title'), description: t('deliverable.2.desc') },
   { icon: Sprout, title: t('deliverable.3.title'), description: t('deliverable.3.desc') },
   { icon: Shield, title: t('deliverable.4.title'), description: t('deliverable.4.desc') },
-  { icon: Archive, title: t('deliverable.5.title'), description: t('deliverable.5.desc') },
 ];
 
 const DeliverableItem = ({ icon: Icon, title, description }: { icon: React.ElementType; title: string; description: string }) => (

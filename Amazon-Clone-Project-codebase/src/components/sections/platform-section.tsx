@@ -1,4 +1,4 @@
-import { HeartPulse, MapPin, Users, Sparkles, Leaf, ShoppingBag, Radio } from 'lucide-react';
+import { HeartPulse, MapPin, Users, Leaf, ShoppingBag, Radio } from 'lucide-react';
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -13,7 +13,6 @@ const makeFeatures = (t: (k: string) => string): Feature[] => [
   { icon: HeartPulse, title: t("platform.feature.impact.title"), description: t("platform.feature.impact.desc") },
   { icon: MapPin, title: t("platform.feature.map.title"), description: t("platform.feature.map.desc") },
   { icon: Users, title: t("platform.feature.dao.title"), description: t("platform.feature.dao.desc") },
-  { icon: Sparkles, title: t("platform.feature.exchange.title"), description: t("platform.feature.exchange.desc") },
   { icon: Leaf, title: t("platform.feature.green.title"), description: t("platform.feature.green.desc") },
   { icon: ShoppingBag, title: t("platform.feature.market.title"), description: t("platform.feature.market.desc") },
   { icon: Radio, title: t("platform.feature.learning.title"), description: t("platform.feature.learning.desc") },

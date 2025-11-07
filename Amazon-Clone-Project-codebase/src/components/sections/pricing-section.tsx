@@ -9,57 +9,39 @@ interface TicketTier {
 }
 
 const ticketDataEn: TicketTier[] = [
-  { category: 'AMAzone Pass', value: 'FREE', includes: 'General access + open experiences' },
-  {
-    category: 'Camping',
-    value: '30 (personal tent) / 50 (our tent) / 70 (with tent + inflatable mattress) per day',
-    includes: 'Collective space + bathroom + community kitchen',
-  },
-  { category: 'Glamping', value: '100 / day', includes: 'Equipped tent + energy + comfort' },
-  { category: 'Motorhome / Trailer', value: '50 / day', includes: 'Parking with water and energy' },
-  { category: 'Lecture / Show Space', value: '600 / day', includes: 'Stage + sound + staff' },
-  { category: 'Booth / Exhibition', value: '2000 (Nov 5–22 package)', includes: '3x3m space tent + power + promotion' },
+  { category: 'Stand / Exhibition', value: 'R$10,000 (11–21 Nov package)', includes: '3x3m tent + power + promotion' },
   {
     category: (
       <>
         Art Exhibition*
         <span className="block text-xs font-normal text-text-secondary mt-1">
-          (upon approval by the curatorial board)
+          (subject to curatorial approval)
         </span>
       </>
     ),
-    value: '1,000 / 15 days of exhibition',
-    includes: 'Pavilion of Art + 2 cocktails + communication',
+    value: 'R$5,000 / 11 days',
+    includes: 'Art Pavilion + 2 cocktails + communication',
   },
-  { category: 'Restaurants / Food Hubs', value: '2,000 + % of sales', includes: 'Fixed space + media visibility' },
-  { category: 'Sponsorship Packages', value: '5k – 500k', includes: 'Activations, panels, and COP30 branding' },
+  { category: 'Restaurants / Food Hubs', value: 'R$10,000 + % of sales', includes: 'Fixed space + media visibility' },
+  { category: 'Sponsorship Packages', value: 'R$30,000 to R$2,000,000', includes: 'Activations, panels, and COP30 branding' },
 ];
 
 const ticketDataPt: TicketTier[] = [
-  { category: 'Passe AMAzone', value: 'GRÁTIS', includes: 'Acesso geral + experiências abertas' },
-  {
-    category: 'Camping',
-    value: '150 (barraca pessoal) / 220 (nossa barraca) / 280 (com barraca + colchão inflável) por dia',
-    includes: 'Espaço coletivo + banheiro + cozinha comunitária',
-  },
-  { category: 'Glamping', value: '500 / dia e por pessoa', includes: 'Barraca equipada + energia + conforto' },
-  { category: 'Motorhome / Trailer', value: '500 / dia', includes: 'Estacionamento com água e energia' },
-  { category: 'Espaço para Palestra / Show', value: '2300 / dia', includes: 'Palco + som + equipe' },
-  { category: 'Estande / Exposição', value: '10.000 (pacote 5–22 Nov)', includes: 'Tenda 3x3m + energia + promoção' },
+  { category: 'Estande / Exposição', value: 'R$10.000 (pacote 11–21 Nov)', includes: 'Tenda 3x3m + energia + promoção' },
   {
     category: (
       <>
         Exposição de Arte*
         <span className="block text-xs font-normal text-text-secondary mt-1">
-          (mediante aprovação do conselho curatorial)
+          (mediante aprovação curatorial)
         </span>
       </>
     ),
-    value: '5.000 / 15 dias de exposição',
+    value: 'R$5.000 / 11 dias',
     includes: 'Pavilhão de Arte + 2 coquetéis + comunicação',
   },
-  { category: 'Restaurantes / Hubs de Alimentação', value: '10.000 + % das vendas', includes: 'Espaço fixo + visibilidade na mídia' },
-  { category: 'Pacotes de Patrocínio', value: '50k – 2mm', includes: 'Ativações, painéis e branding COP30' },
+  { category: 'Restaurantes / Hubs de Alimentação', value: 'R$10.000 + % das vendas', includes: 'Espaço fixo + visibilidade na mídia' },
+  { category: 'Pacotes de Patrocínio', value: 'R$30.000 a R$2.000.000', includes: 'Ativações, painéis e branding COP30' },
 ];
 
 const PricingSection = () => {
@@ -115,4 +97,3 @@ const PricingSection = () => {
 };
 
 export default PricingSection;
-

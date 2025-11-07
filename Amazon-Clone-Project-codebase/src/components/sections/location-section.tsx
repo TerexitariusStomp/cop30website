@@ -1,10 +1,9 @@
 import React from 'react';
-import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const LocationSection: React.FC = () => {
   const { t } = useLanguage();
-  const listItems = [
+  const listItemsRaw = [
     t('location.item.1'),
     t('location.item.2'),
     t('location.item.3'),
@@ -13,6 +12,7 @@ const LocationSection: React.FC = () => {
     t('location.item.6'),
     t('location.item.7'),
   ];
+  const listItems = listItemsRaw.filter((x) => x && x.trim().length > 0);
 
   return (
     <div className="bg-background-primary">
@@ -40,20 +40,22 @@ const LocationSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column */}
-          <div>
-            <h3 className="font-body text-[1.75rem] leading-tight font-medium text-text-primary mb-6">{t('location.camps.title')}</h3>
-            <div className="space-y-4 text-base text-text-secondary leading-relaxed">
-              <p>{t('location.camps.intro')}</p>
-              <ul className="list-disc list-outside pl-5 space-y-3 marker:text-accent-coral marker:text-xl">
-                {listItems.map((item, index) => (
-                  <li key={index} className="pl-2">
-                    {item}
-                  </li>
-                ))}
-              </ul>
+          {/* Right Column (optional) */}
+          {listItems.length > 0 && (
+            <div>
+              <h3 className="font-body text-[1.75rem] leading-tight font-medium text-text-primary mb-6">{t('location.camps.title')}</h3>
+              <div className="space-y-4 text-base text-text-secondary leading-relaxed">
+                <p>{t('location.camps.intro')}</p>
+                <ul className="list-disc list-outside pl-5 space-y-3 marker:text-accent-coral marker:text-xl">
+                  {listItems.map((item, index) => (
+                    <li key={index} className="pl-2">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </div>

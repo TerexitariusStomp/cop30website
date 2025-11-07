@@ -22,12 +22,18 @@ const IntroSection = () => {
         <div className="mx-auto lg:mx-0">
           <p className="text-lg leading-loose text-text-primary">
             {t('intro.p1')}
-            <span className="text-accent-coral">{t('intro.p1.span')}</span>.
+            {t('intro.p1.span') && (
+              <>
+                <span className="text-accent-coral">{t('intro.p1.span')}</span>.
+              </>
+            )}
           </p>
 
-          <blockquote className="mt-8">
-            <p className="text-xl">"{t('intro.quote')}"</p>
-          </blockquote>
+          {t('intro.quote') && (
+            <blockquote className="mt-8">
+              <p className="text-xl">"{t('intro.quote')}"</p>
+            </blockquote>
+          )}
 
 
         </div>
