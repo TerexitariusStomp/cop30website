@@ -93,19 +93,22 @@
 }
 
 @layer base {
-  /* The default border color has changed to `currentColor` in Tailwind CSS v4,
-     so we've added these compatibility styles to make sure everything still
-     looks the same as it did with Tailwind CSS v3.
-
-     If we ever want to remove these styles, we need to add an explicit border
-     color utility to any element that depends on these defaults.
-  */
+  /* Essential CSS resets and base styles */
   *,
-  ::after,
   ::before,
-  ::backdrop,
-  ::file-selector-button {
+  ::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
     border-color: var(--color-border);
+  }
+
+  html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    font-family: var(--font-body);
   }
 
   :root {
@@ -146,10 +149,17 @@
   }
 
   body {
+    margin: 0;
     font-family: var(--font-body);
     background-color: var(--color-background-primary);
     color: var(--color-text-primary);
     line-height: 1.6;
+  }
+
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -233,6 +243,24 @@
       padding-left: 1.5rem; /* 24px */
       padding-right: 1.5rem; /* 24px */
     }
+  }
+
+  /* Ensure images and media elements are responsive */
+  img,
+  svg,
+  video,
+  canvas,
+  audio,
+  iframe,
+  embed,
+  object {
+    display: block;
+    max-width: 100%;
+  }
+
+  img,
+  video {
+    height: auto;
   }
 
   /* Base styles for Shadcn components */
