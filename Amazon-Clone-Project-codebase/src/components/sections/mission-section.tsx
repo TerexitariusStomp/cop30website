@@ -15,22 +15,27 @@ const MissionSection = () => {
   ];
 
   return (
-    <section className="bg-background-primary py-24 sm:py-32" style={{ backgroundImage: `url('https://hackmd.io/_uploads/By8SzkI6le.jpg')`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat' }}>
-      <div className="container mx-auto">
+    <section className="relative bg-background-primary py-24 sm:py-32" style={{ backgroundImage: `url('https://hackmd.io/_uploads/By8SzkI6le.jpg')`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat' }}>
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/60"></div>
+      
+      <div className="container mx-auto relative z-10">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="font-display text-[42px] leading-tight text-accent-coral">
-            {t('mission.title')}
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-text-primary">
-            {t('mission.lead')}
-          </p>
+          <div className="bg-black/40 backdrop-blur-sm rounded-lg p-6 mb-6">
+            <h2 className="font-display text-[42px] leading-tight text-white drop-shadow-lg">
+              {t('mission.title')}
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-white drop-shadow-md">
+              {t('mission.lead')}
+            </p>
+          </div>
         </div>
         
         <div className="mt-16 mx-auto max-w-3xl">
-          <div className="bg-background-secondary border border-border-subtle rounded-lg p-8">
+          <div className="bg-black/70 backdrop-blur-sm border border-white/20 rounded-lg p-8">
             <div className="flex flex-col items-center gap-4">
               {missionItems.map((item, index) => (
-                <div key={index} className="text-xl text-center text-[#D4C5A9]">
+                <div key={index} className="text-xl text-center text-white drop-shadow-md">
                   {item}
                 </div>
               ))}
