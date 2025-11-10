@@ -38,6 +38,9 @@ jobs:
         run: |
           cd Amazon-Clone-Project-codebase
           npm run build
+          
+      - name: Add .nojekyll file
+        run: touch Amazon-Clone-Project-codebase/out/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
