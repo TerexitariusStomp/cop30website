@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Amazone",
   description: "Amazone COOP30 - Temporary Autonomous Zone for cooperation, regeneration and culture",
   icons: {
-    icon: "/logo.png",
+    icon: "/logo.jpg",
   },
 };
 

@@ -8,7 +8,7 @@ const HeroSection = () => {
       
       <div className="relative z-10 flex flex-col items-center justify-center p-6 text-center">
         <Image
-          src="/logo.png"
+          src="/logo.jpg"
           alt={t("hero.alt")}
           width={400}
           height={350}
