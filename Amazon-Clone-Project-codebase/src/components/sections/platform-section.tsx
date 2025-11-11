@@ -65,7 +65,7 @@ const PlatformSection = () => {
           {/* Right Column - Image */}
           <div className="flex items-center justify-center">
             <img
-              src="/parrot.jpg"
+              src="/sidebar.jpg"
               alt={t('platform.image.alt')}
               className="w-full h-auto rounded-lg object-contain max-w-md"
             />
