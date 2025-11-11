@@ -12,7 +12,7 @@ export const translations: Record<Lang, Dict> = {
     // Intro
     "intro.alt": "Wooden boats on a calm river, evoking a sense of tranquility and connection to nature.",
     "intro.p1":
-      "AMAzone COOP30 is a Temporary Autonomous Zone (TAZ) located in the FREEzone, in Praça da Bandeira, in Belém (PA), from November 15th to 22nd, 2025. It is a space for free interaction and cultural expression, where the Spirit of Dialogue and Time will be our masters for nine days. Through discussion circles and the co-creation of regenerative solutions, we will pause to listen to ourselves, feel, and reconnect with ourselves, with each other, and with Nature. We will bring together cooperatives, associations, startups, artists, activists, scientists, entrepreneurs, impact investors, and traditional communities in an experience of self-management, cooperation, regeneration, innovation, and a culture of P.E.A.C.E. AMAzone — here integrity is the axis, autonomy is the path, regeneration is the destination, and love is the law.",
+      "AMAzone COOP30 is a Temporary Autonomous Zone (TAZ) located in the FREEzone, in Praça da Bandeira, in Belém (PA), from November 14th to 22nd, 2025. It is a space for free interaction and cultural expression, where the Spirit of Dialogue and Time will be our masters for nine days. Through discussion circles and the co-creation of regenerative solutions, we will pause to listen to ourselves, feel, and reconnect with ourselves, with each other, and with Nature. We will bring together cooperatives, associations, startups, artists, activists, scientists, entrepreneurs, impact investors, and traditional communities in an experience of self-management, cooperation, regeneration, innovation, and a culture of P.E.A.C.E. AMAzone — here integrity is the axis, autonomy is the path, regeneration is the destination, and love is the law.",
     "intro.p1.span": "",
     "intro.quote": "",
 
@@ -78,7 +78,7 @@ export const translations: Record<Lang, Dict> = {
     "location.title": "Location; AMAzone @ FREEzone — Praça da Bandeira, Belém (PA)",
     "location.venue.title": "FREEzone Details",
     "location.venue.line1": "AMAzone @ FREEzone — Praça da Bandeira, Belém (PA)",
-    "location.venue.line2": "The FREEzone will be dimensioned in different domes, a main stage, gastronomy area, bioeconomy fair, and",
+    "location.venue.line2": "The FREEzone will be dimensioned in different domes, a main stage, bioeconomy fair, and",
     "location.venue.line2.strong": "experience zones",
     "location.image.alt": "Venue image",
     "location.camps.title": "",
@@ -154,7 +154,7 @@ export const translations: Record<Lang, Dict> = {
     // Intro
     "intro.alt": "Barcos de madeira em um rio calmo, evocando tranquilidade e conexão com a natureza.",
     "intro.p1":
-      "O AMAzone COOP30 é uma Zona Autônoma Temporária (TAZ) localizada na FREEzone, na Praça da Bandeira, em Belém (PA), de 15 a 22 de novembro de 2025. É um espaço de livre interação e expressão cultural, onde o Espírito do Diálogo e do Tempo serão nossos mestres por nove dias. Através de rodas de conversa e da co-criação de soluções regenerativas, vamos pausar para nos ouvir, sentir e reconectar com nós mesmos, com o outro e com a Natureza. Reuniremos cooperativas, associações, startups, artistas, ativistas, cientistas, empreendedores, investidores de impacto e comunidades tradicionais em uma experiência de autogestão, cooperação, regeneração, inovação e cultura de P.A.Z. AMAzone — aqui a integridade é o eixo, a autonomia é o caminho, a regeneração é o destino e o amor é a lei.",
+      "O AMAzone COOP30 é uma Zona Autônoma Temporária (TAZ) localizada na FREEzone, na Praça da Bandeira, em Belém (PA), de 14 a 22 de novembro de 2025. É um espaço de livre interação e expressão cultural, onde o Espírito do Diálogo e do Tempo serão nossos mestres por nove dias. Através de rodas de conversa e da co-criação de soluções regenerativas, vamos pausar para nos ouvir, sentir e reconectar com nós mesmos, com o outro e com a Natureza. Reuniremos cooperativas, associações, startups, artistas, ativistas, cientistas, empreendedores, investidores de impacto e comunidades tradicionais em uma experiência de autogestão, cooperação, regeneração, inovação e cultura de P.A.Z. AMAzone — aqui a integridade é o eixo, a autonomia é o caminho, a regeneração é o destino e o amor é a lei.",
     "intro.p1.span": "",
     "intro.quote": "",
 
@@ -220,7 +220,7 @@ export const translations: Record<Lang, Dict> = {
     "location.title": "Local; AMAzone @ FREEzone — Praça da Bandeira, Belém (PA)",
     "location.venue.title": "Detalhes da FREEzone",
     "location.venue.line1": "AMAzone @ FREEzone — Praça da Bandeira, Belém (PA)",
-    "location.venue.line2": "A FREEzone será dimensionada em diferentes domos, palco principal, área de gastronomia, feira da bioeconomia e",
+    "location.venue.line2": "A FREEzone será dimensionada em diferentes domos, palco principal, feira da bioeconomia e",
     "location.venue.line2.strong": "zonas de experiência",
     "location.image.alt": "Imagem do local",
     "location.camps.title": "",
