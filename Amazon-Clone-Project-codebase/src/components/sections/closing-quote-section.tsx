@@ -8,7 +8,7 @@ const ClosingQuoteSection = () => {
       <div className="max-w-[900px] mx-auto px-6 flex flex-col items-center">
         
         <Image
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f9dbff3c-828d-4087-a500-734899d703f7-amazone-coop30-on77bsx-gamma-site/assets/images/ae65513d-3168-4f6d-b890-656785ecda48-1.png"
+          src="/logo.jpg"
           alt={t('closing.alt')}
           width={200}
           height={200}
