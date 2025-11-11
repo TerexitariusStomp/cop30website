@@ -18,7 +18,7 @@ const CodexSection = () => {
           <p className="text-base text-text-secondary max-w-4xl mx-auto mt-4">{t('codex.p2')}</p>
           <div className="flex justify-center my-8">
             <img
-              src="https://hackmd.io/_uploads/Hy7voJ8plg.jpg"
+              src="/centraldome.jpg"
               alt="Codex image"
               className="w-48 h-48 object-contain rounded-lg"
             />

@@ -32,7 +32,7 @@ const LocationSection: React.FC = () => {
               </p>
               <div className="mt-8">
                 <img
-                  src="https://hackmd.io/_uploads/SyUBG1U6xl.jpg"
+                  src="/domes.jpg"
                   alt={t('location.image.alt')}
                   className="w-full h-auto rounded-lg object-contain"
                 />
