@@ -3,16 +3,11 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 const MissionSection = () => {
   const { t } = useLanguage();
-  const missionItems = [
-    t("mission.items.0"),
-    t("mission.items.1"),
-    t("mission.items.2"),
-    t("mission.items.3"),
-    t("mission.items.4"),
-    t("mission.items.5"),
-    t("mission.items.6"),
-    t("mission.items.7"),
-  ];
+  const itemKeys = Array.from({ length: 12 }, (_, index) => `mission.items.${index}`);
+  const missionItems = itemKeys
+    .map((key) => ({ key, text: t(key) }))
+    .filter(({ key, text }) => text && text !== key && text.trim().length > 0)
+    .map(({ text }) => text);
 
   return (
     <section className="relative bg-background-primary py-24 sm:py-32" style={{ backgroundImage: `url('/mission-domes.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat' }}>

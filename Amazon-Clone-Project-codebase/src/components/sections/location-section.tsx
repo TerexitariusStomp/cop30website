@@ -1,36 +1,36 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
+const collectStrings = (t: (key: string) => string, prefix: string, maxItems: number) => {
+  const values: string[] = [];
+  for (let index = 1; index <= maxItems; index++) {
+    const key = `${prefix}.${index}`;
+    const value = t(key);
+    if (value && value !== key && value.trim().length > 0) {
+      values.push(value);
+    }
+  }
+  return values;
+};
+
 const LocationSection: React.FC = () => {
   const { t } = useLanguage();
-  const listItemsRaw = [
-    t('location.item.1'),
-    t('location.item.2'),
-    t('location.item.3'),
-    t('location.item.4'),
-    t('location.item.5'),
-    t('location.item.6'),
-    t('location.item.7'),
-  ];
-  const listItems = listItemsRaw.filter((x) => x && x.trim().length > 0);
+  const aboutParagraphs = collectStrings(t, 'location.about.paragraph', 4);
+  const callParagraphs = collectStrings(t, 'location.call.paragraph', 4);
+  const callHighlights = collectStrings(t, 'location.call.list', 4);
 
   return (
     <div className="bg-background-primary">
       <div className="container mx-auto py-24 px-6 md:px-8">
         <h2 className="text-center font-display text-4xl text-text-primary mb-16">{t('location.title')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
-          {/* Left Column */}
           <div>
-            <h3 className="font-body text-[1.75rem] leading-tight font-medium text-text-primary mb-6">{t('location.venue.title')}</h3>
-            <div className="space-y-6 text-base text-text-secondary leading-relaxed">
-              <p>
-                <strong className="font-semibold text-text-primary">{t('location.venue.title').split(' ')[0]}:</strong> {t('location.venue.line1')}
-              </p>
-              <p>
-                {t('location.venue.line2')}
-                <strong className="font-semibold text-text-primary">{t('location.venue.line2.strong')}</strong>.
-              </p>
-              <div className="mt-8">
+            <h3 className="font-body text-[1.75rem] leading-tight font-medium text-text-primary mb-6">{t('location.about.title')}</h3>
+            <div className="space-y-5 text-base text-text-secondary leading-relaxed">
+              {aboutParagraphs.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+              <div className="mt-6">
                 <img
                   src="/domes.jpg"
                   alt={t('location.image.alt')}
@@ -39,23 +39,23 @@ const LocationSection: React.FC = () => {
               </div>
             </div>
           </div>
-
-          {/* Right Column (optional) */}
-          {listItems.length > 0 && (
-            <div>
-              <h3 className="font-body text-[1.75rem] leading-tight font-medium text-text-primary mb-6">{t('location.camps.title')}</h3>
-              <div className="space-y-4 text-base text-text-secondary leading-relaxed">
-                <p>{t('location.camps.intro')}</p>
+          <div>
+            <h3 className="font-body text-[1.75rem] leading-tight font-medium text-text-primary mb-6">{t('location.call.title')}</h3>
+            <div className="space-y-4 text-base text-text-secondary leading-relaxed">
+              {callParagraphs.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+              {callHighlights.length > 0 && (
                 <ul className="list-disc list-outside pl-5 space-y-3 marker:text-accent-coral marker:text-xl">
-                  {listItems.map((item, index) => (
+                  {callHighlights.map((highlight, index) => (
                     <li key={index} className="pl-2">
-                      {item}
+                      {highlight}
                     </li>
                   ))}
                 </ul>
-              </div>
+              )}
             </div>
-          )}
+          </div>
         </div>
       </div>
     </div>

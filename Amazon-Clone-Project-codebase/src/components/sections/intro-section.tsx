@@ -3,6 +3,12 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 const IntroSection = () => {
   const { t } = useLanguage();
+  const paragraphKeys = Array.from({ length: 6 }, (_, index) => `intro.paragraph.${index + 1}`);
+  const paragraphs = paragraphKeys
+    .map((key) => ({ key, text: t(key) }))
+    .filter(({ key, text }) => text && text !== key && text.trim().length > 0)
+    .map(({ text }) => text);
+
   return (
     <section className="relative isolate overflow-hidden bg-background-primary py-24 sm:py-32">
       {/* Background Image and Overlay */}
@@ -19,23 +25,10 @@ const IntroSection = () => {
       </div>
 
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
-        <div className="mx-auto lg:mx-0">
-          <p className="text-lg leading-loose text-text-primary">
-            {t('intro.p1')}
-            {t('intro.p1.span') && (
-              <>
-                <span className="text-accent-coral">{t('intro.p1.span')}</span>.
-              </>
-            )}
-          </p>
-
-          {t('intro.quote') && (
-            <blockquote className="mt-8">
-              <p className="text-xl">"{t('intro.quote')}"</p>
-            </blockquote>
-          )}
-
-
+        <div className="mx-auto lg:mx-0 space-y-6 text-lg leading-loose text-text-primary">
+          {paragraphs.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </div>
       </div>
     </section>

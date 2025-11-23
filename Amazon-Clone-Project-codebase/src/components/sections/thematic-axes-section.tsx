@@ -5,69 +5,93 @@ import {
   Recycle,
   Landmark,
   Carrot,
-  Blocks,
-  Palette,
-  Users,
-  Tent,
-  Handshake,
-  Building2,
-  BrainCircuit,
-  UtensilsCrossed,
-  Droplet,
-  UsersRound,
 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-type ThematicAxe = {
+type PocCategory = {
   icon: React.ElementType;
   title: string;
-  description: string;
+  description?: string;
+  items: string[];
 };
 
-const makeAxes = (t: (k: string) => string): ThematicAxe[] => [
-  { icon: Sprout, title: t('axes.1'), description: '' },
-  { icon: Trees, title: t('axes.2'), description: '' },
-  { icon: Recycle, title: t('axes.3'), description: '' },
-  { icon: Landmark, title: t('axes.4'), description: '' },
-  { icon: Carrot, title: t('axes.5'), description: '' },
-  { icon: Blocks, title: t('axes.6'), description: '' },
-  { icon: Palette, title: t('axes.7'), description: '' },
-  { icon: Users, title: t('axes.8'), description: '' },
-  { icon: Tent, title: t('axes.9'), description: '' },
-  { icon: Handshake, title: t('axes.10'), description: '' },
-  { icon: Building2, title: t('axes.11'), description: '' },
-  { icon: BrainCircuit, title: t('axes.12'), description: '' },
-  { icon: UtensilsCrossed, title: t('axes.13'), description: '' },
-  { icon: Droplet, title: t('axes.14'), description: '' },
-  { icon: UsersRound, title: t('axes.15'), description: '' },
+const collectItems = (t: (k: string) => string, prefix: string, maxItems = 12) => {
+  const entries: string[] = [];
+  for (let index = 1; index <= maxItems; index++) {
+    const key = `${prefix}.items.${index}`;
+    const value = t(key);
+    if (value && value !== key && value.trim().length > 0) {
+      entries.push(value);
+    }
+  }
+  return entries;
+};
+
+const makeCategories = (t: (k: string) => string): PocCategory[] => [
+  {
+    icon: Sprout,
+    title: t('pocs.section.1.title'),
+    description: t('pocs.section.1.range'),
+    items: collectItems(t, 'pocs.section.1', 10),
+  },
+  {
+    icon: Trees,
+    title: t('pocs.section.2.title'),
+    description: t('pocs.section.2.range'),
+    items: collectItems(t, 'pocs.section.2', 6),
+  },
+  {
+    icon: Recycle,
+    title: t('pocs.section.3.title'),
+    description: t('pocs.section.3.range'),
+    items: collectItems(t, 'pocs.section.3', 6),
+  },
+  {
+    icon: Landmark,
+    title: t('pocs.section.4.title'),
+    description: t('pocs.section.4.range'),
+    items: collectItems(t, 'pocs.section.4', 6),
+  },
+  {
+    icon: Carrot,
+    title: t('pocs.section.5.title'),
+    description: t('pocs.section.5.range'),
+    items: collectItems(t, 'pocs.section.5', 6),
+  },
 ];
 
 const ThematicAxesSection = () => {
   const { t } = useLanguage();
-  const thematicAxes = makeAxes(t);
+  const categories = makeCategories(t);
   return (
     <section className="bg-background-primary text-text-primary py-24 sm:py-32">
       <div className="container mx-auto px-6 md:px-8">
         <div className="flex flex-col justify-center">
           <h2 className="text-[2.625rem] leading-[1.3] text-text-primary text-center mb-12">{t('axes.title')}</h2>
-          <p className="text-lg leading-8 text-text-secondary text-center max-w-md mx-auto mb-12">
+          <p className="text-lg leading-8 text-text-secondary text-center max-w-3xl mx-auto mb-12">
             {t('axes.lead.prefix')}
             <span className="text-accent-orange underline">{t('axes.lead.span')}</span>
             {t('axes.lead.suffix')}
           </p>
-          <div className="space-y-8">
-            {thematicAxes.map((axe, index) => (
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {categories.map((category, index) => (
               <div key={index} className="flex flex-col p-6 rounded-lg transition-colors duration-300 hover:bg-background-secondary">
-                <div className="mb-6">
-                  <axe.icon
-                    className="h-12 w-12 text-primary"
-                    aria-hidden="true"
-                    strokeWidth="1.5"
-                  />
+                <div className="flex items-center gap-4 mb-4">
+                  <category.icon className="h-10 w-10 text-primary" aria-hidden="true" strokeWidth="1.5" />
+                  <div>
+                    <h3 className="text-xl font-semibold leading-7 text-foreground">
+                      {category.title}
+                    </h3>
+                    {category.description && category.description !== `pocs.section.${index + 1}.range` && (
+                      <p className="text-sm text-text-secondary">{category.description}</p>
+                    )}
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold leading-7 text-foreground">
-                  {axe.title + (axe.description ? ' ' + axe.description : '')}
-                </h3>
+                <ul className="list-disc list-inside space-y-2 text-text-primary">
+                  {category.items.map((item, itemIndex) => (
+                    <li key={itemIndex}>{item}</li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>

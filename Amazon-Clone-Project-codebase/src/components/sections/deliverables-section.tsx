@@ -1,22 +1,27 @@
 import React from 'react';
-import { Network, Sprout, Shield, Archive } from 'lucide-react';
+import { Network, Activity, Users, Shield, Sparkles, Globe2, MapPin } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const makeDeliverables = (t: (k: string) => string) => [
-  { icon: Archive, title: t('deliverable.1.title'), description: t('deliverable.1.desc') },
-  { icon: Network, title: t('deliverable.2.title'), description: t('deliverable.2.desc') },
-  { icon: Sprout, title: t('deliverable.3.title'), description: t('deliverable.3.desc') },
+  { icon: Network, title: t('deliverable.1.title'), description: t('deliverable.1.desc') },
+  { icon: Activity, title: t('deliverable.2.title'), description: t('deliverable.2.desc') },
+  { icon: Users, title: t('deliverable.3.title'), description: t('deliverable.3.desc') },
   { icon: Shield, title: t('deliverable.4.title'), description: t('deliverable.4.desc') },
+  { icon: Sparkles, title: t('deliverable.5.title'), description: t('deliverable.5.desc') },
+  { icon: Globe2, title: t('deliverable.6.title'), description: t('deliverable.6.desc') },
+  { icon: MapPin, title: t('deliverable.7.title'), description: t('deliverable.7.desc') },
 ];
 
-const DeliverableItem = ({ icon: Icon, title, description }: { icon: React.ElementType; title: string; description: string }) => (
+const DeliverableItem = ({ icon: Icon, title, description }: { icon: React.ElementType; title: string; description?: string }) => (
   <div className="flex flex-col lg:flex-row items-start gap-6">
     <div className="flex-shrink-0 w-16 h-16 bg-[#E89B7C] rounded-full flex items-center justify-center">
       <Icon className="w-8 h-8 text-[#1f3d3d]" />
     </div>
     <div className="flex-1">
       <h3 className="text-2xl font-bold font-body text-text-primary">{title}</h3>
-      <p className="mt-2 text-base text-text-secondary leading-relaxed">{description}</p>
+      {description && description.trim().length > 0 && (
+        <p className="mt-2 text-base text-text-secondary leading-relaxed">{description}</p>
+      )}
     </div>
   </div>
 );

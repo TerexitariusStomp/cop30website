@@ -1,4 +1,4 @@
-import { HeartPulse, MapPin, Users, Leaf, ShoppingBag, Radio } from 'lucide-react';
+import { HeartPulse, Users, Leaf, ShoppingBag, Radio } from 'lucide-react';
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -11,7 +11,6 @@ interface Feature {
 
 const makeFeatures = (t: (k: string) => string): Feature[] => [
   { icon: HeartPulse, title: t("platform.feature.impact.title"), description: t("platform.feature.impact.desc") },
-  { icon: MapPin, title: t("platform.feature.map.title"), description: t("platform.feature.map.desc") },
   { icon: Users, title: t("platform.feature.dao.title"), description: t("platform.feature.dao.desc") },
   { icon: Leaf, title: t("platform.feature.green.title"), description: t("platform.feature.green.desc") },
   { icon: ShoppingBag, title: t("platform.feature.market.title"), description: t("platform.feature.market.desc") },
@@ -57,8 +56,7 @@ const PlatformSection = () => {
           <div className="flex flex-col justify-center">
             <h2 className="text-[42px] font-light text-text-primary mb-6">{t('platform.title')}</h2>
             <p className="text-lg text-text-primary">
-              {t('platform.lead').replace('phygital', '')}
-              <span className="text-primary">phygital</span> {""}
+              {t('platform.lead')}
             </p>
           </div>
 

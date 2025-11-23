@@ -15,10 +15,13 @@ const HeroSection = () => {
           className="mb-10"
           priority
         />
-        <h1 className="font-display text-6xl uppercase tracking-[0.2em] text-text-primary mb-4">
+        <h1 className="font-display text-6xl uppercase tracking-[0.2em] text-text-primary mb-3">
           {t("hero.title")}
         </h1>
         <p className="text-xl text-text-primary font-light tracking-wide">
+          {t("hero.subtitle")}
+        </p>
+        <p className="text-xl text-text-primary font-light tracking-wide mt-2">
           {t("hero.tagline")}
         </p>
       </div>
