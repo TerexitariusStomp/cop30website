@@ -36,6 +36,7 @@ export const translations: Record<Lang, Dict> = {
     "vision.items.8": "technology in service of the land",
     "vision.items.9": "ancestry as living knowledge",
     "vision.footer": "Fazenda Patú Anu becomes a living prototype of the future, an Amazonian ReGen Hub.",
+    "vision.image.alt": "Aerial view of the land at Fazenda Patú Anu",
 
     // Mission
     "mission.title": "Mission",
@@ -117,6 +118,8 @@ export const translations: Record<Lang, Dict> = {
     // Location
     "location.title": "About AMAzone Patú Anu — The Living Bioeconomy Lab of Marajó",
     "location.image.alt": "Patú Anu eco-farm school",
+    "location.image.tree.alt": "Tree canopy surrounding Patú Anu",
+    "location.image.yucca.alt": "Yucca plants thriving at Patú Anu",
     "location.about.title": "About AMAzone Patú Anu",
     "location.about.paragraph.1":
       "Patú Anu is our eco-farm school, hidden in the deep green of Marajó Island — a place where the Amazon teaches through touch, taste, sound, and movement.",
@@ -236,6 +239,7 @@ export const translations: Record<Lang, Dict> = {
     "vision.items.8": "tecnologia a serviço da terra",
     "vision.items.9": "ancestralidade como conhecimento vivo",
     "vision.footer": "A Fazenda Patú Anu torna-se um protótipo vivo de futuro, um ReGen Hub amazônico.",
+    "vision.image.alt": "Vista aérea da terra na Fazenda Patú Anu",
 
     // Mission
     "mission.title": "Missão",
@@ -317,6 +321,8 @@ export const translations: Record<Lang, Dict> = {
     // Location
     "location.title": "Sobre AMAzone Patú Anu — O Laboratório Vivo da Bioeconomia do Marajó",
     "location.image.alt": "Escola-fazenda ecológica Patú Anu",
+    "location.image.tree.alt": "Copa das árvores envolvendo Patú Anu",
+    "location.image.yucca.alt": "Plantas de mandioca prosperando em Patú Anu",
     "location.about.title": "Sobre AMAzone Patú Anu",
     "location.about.paragraph.1":
       "Patú Anu é nossa escola-fazenda ecológica, escondida no verde profundo da Ilha do Marajó — um lugar onde a Amazônia ensina pelo toque, pelo sabor, pelo som e pelo movimento.",

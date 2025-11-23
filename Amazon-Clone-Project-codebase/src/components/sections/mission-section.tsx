@@ -10,7 +10,7 @@ const MissionSection = () => {
     .map(({ text }) => text);
 
   return (
-    <section className="relative bg-background-primary py-24 sm:py-32" style={{ backgroundImage: `url('/mission-domes.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat' }}>
+    <section className="relative bg-background-primary py-24 sm:py-32" style={{ backgroundImage: `url('/landarea.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat' }}>
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-black/60"></div>
       

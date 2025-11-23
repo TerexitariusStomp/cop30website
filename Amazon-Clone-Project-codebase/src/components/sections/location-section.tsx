@@ -26,17 +26,26 @@ const LocationSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
           <div>
             <h3 className="font-body text-[1.75rem] leading-tight font-medium text-text-primary mb-6">{t('location.about.title')}</h3>
-            <div className="space-y-5 text-base text-text-secondary leading-relaxed">
+            <div className="space-y-8 text-base text-text-secondary leading-relaxed">
               {aboutParagraphs.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
+                <div key={index} className="space-y-4">
+                  <p>{paragraph}</p>
+                  {index === 0 && (
+                    <img
+                      src="/tree.jpg"
+                      alt={t('location.image.tree.alt')}
+                      className="w-full h-auto rounded-lg object-cover shadow-md"
+                    />
+                  )}
+                  {index === 1 && (
+                    <img
+                      src="/yucca.jpg"
+                      alt={t('location.image.yucca.alt')}
+                      className="w-full h-auto rounded-lg object-cover shadow-md"
+                    />
+                  )}
+                </div>
               ))}
-              <div className="mt-6">
-                <img
-                  src="/domes.jpg"
-                  alt={t('location.image.alt')}
-                  className="w-full h-auto rounded-lg object-contain"
-                />
-              </div>
             </div>
           </div>
           <div>

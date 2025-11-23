@@ -30,7 +30,7 @@ const DeliverablesSection = () => {
   const { t } = useLanguage();
   const deliverables = makeDeliverables(t);
   return (
-    <section style={{ backgroundImage: `url('/umbrellas.jpg')`, backgroundColor: '#E89B7C', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'multiply' }} className="py-24 sm:py-32">
+    <section style={{ backgroundImage: `url('/vivero.jpeg')`, backgroundColor: '#E89B7C', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'multiply' }} className="py-24 sm:py-32">
       <div className="container">
         <div className="bg-[#1f3d3d]/90 rounded-2xl shadow-lg p-12 backdrop-blur-sm">
           <h2 className="text-center font-display text-[2.5rem] leading-tight text-text-primary mb-8">{t('deliverables.title')}</h2>

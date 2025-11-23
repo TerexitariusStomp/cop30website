@@ -32,6 +32,13 @@ const VisionSection = () => {
             <p className="text-text-primary text-lg leading-relaxed">{footer}</p>
           )}
         </div>
+        <div className="mt-8 max-w-4xl">
+          <img
+            src="/landarea.jpg"
+            alt={t('vision.image.alt')}
+            className="w-full h-auto rounded-lg object-cover"
+          />
+        </div>
       </div>
     </section>
   );
