@@ -2,7 +2,6 @@
 
 import HeroSection from "@/components/sections/hero-section";
 import IntroSection from "@/components/sections/intro-section";
-import VisionSection from "@/components/sections/vision-section";
 import MissionSection from "@/components/sections/mission-section";
 import ThematicAxesSection from "@/components/sections/thematic-axes-section";
 import LocationSection from "@/components/sections/location-section";
@@ -18,7 +17,6 @@ export default function Page() {
     <main className="min-h-screen bg-background-primary">
       <HeroSection />
       <IntroSection />
-      <VisionSection />
       <MissionSection />
       <ThematicAxesSection />
       <LocationSection />

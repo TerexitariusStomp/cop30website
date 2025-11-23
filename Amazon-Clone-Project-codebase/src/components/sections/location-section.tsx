@@ -30,13 +30,6 @@ const LocationSection: React.FC = () => {
               {aboutParagraphs.map((paragraph, index) => (
                 <div key={index} className="space-y-4">
                   <p>{paragraph}</p>
-                  {index === 0 && (
-                    <img
-                      src="/tree.jpg"
-                      alt={t('location.image.tree.alt')}
-                      className="w-full h-auto rounded-lg object-cover shadow-md"
-                    />
-                  )}
                   {index === 1 && (
                     <img
                       src="/yucca.jpg"

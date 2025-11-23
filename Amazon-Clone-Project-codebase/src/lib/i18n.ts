@@ -118,7 +118,6 @@ export const translations: Record<Lang, Dict> = {
     // Location
     "location.title": "About AMAzone Patú Anu — The Living Bioeconomy Lab of Marajó",
     "location.image.alt": "Patú Anu eco-farm school",
-    "location.image.tree.alt": "Tree canopy surrounding Patú Anu",
     "location.image.yucca.alt": "Yucca plants thriving at Patú Anu",
     "location.about.title": "About AMAzone Patú Anu",
     "location.about.paragraph.1":
@@ -321,7 +320,6 @@ export const translations: Record<Lang, Dict> = {
     // Location
     "location.title": "Sobre AMAzone Patú Anu — O Laboratório Vivo da Bioeconomia do Marajó",
     "location.image.alt": "Escola-fazenda ecológica Patú Anu",
-    "location.image.tree.alt": "Copa das árvores envolvendo Patú Anu",
     "location.image.yucca.alt": "Plantas de mandioca prosperando em Patú Anu",
     "location.about.title": "Sobre AMAzone Patú Anu",
     "location.about.paragraph.1":
